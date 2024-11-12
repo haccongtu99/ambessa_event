@@ -1,0 +1,62 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.hero-container {
+  height: 100vh;
+  width: 100%;
+  background-color: var(--red-base);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider-container {
+  background-color: green;
+  /* background-color: var(--secondary-color); */
+}
+
+.slider-container .slider-item {
+  background-color: red;
+  width: 200px;
+  height: 200px;
+}
+
+.sticky-social-icons {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 3;
+  width: max-content; /* Ensure the container's width is as wide as the widest child */
+  margin-right: 20px;
+}
+
+.sticky-social-icons .social-icon {
+  margin: 5px 0;   /* Spacing between icons */
+  display: flex;
+  /*flex-direction: row-reverse;*/
+}
+
+.sticky-social-icons .social-icon img {
+  display: block;
+  width: 60px;     /* Width of icons */
+  height: 60px;    /* Height of icons */
+  transition: transform 0.3s ease;
+}
+
+.sticky-social-icons .social-icon:hover img {
+  transform: scale(1.1); /* Slightly increase size on hover */
+  filter:brightness(110%)
+}
+
+.sticky-social-icons .connect-message {
+  display: block;
+  margin-top: 10px;
+  width: auto;
+  height: 110px;
+  align-self: flex-end;
+}

@@ -1,0 +1,33 @@
+/* .text-lg {
+  font-size: 24px;
+} */
+.text-large {
+  font-size: 36px;
+  font-family: var(--font-primary);
+  font-weight: normal;
+}
+
+/* .text-title {
+  font-size: 8px
+} */
+
+.text-lg {
+  color: var(--color-white);
+  font-size: 32px;
+  font-family: var(--font-primary);
+  font-weight: normal;
+}
+
+.text-md {
+  font-size: 18px;
+  color: var(--color-white);
+  font-family: var(--font-primary);
+  font-weight: normal;
+}
+
+.text-sm {
+  font-size: 14px;
+  color: var(--color-white);
+  font-family: var(--font-primary);
+  font-weight: normal;
+}

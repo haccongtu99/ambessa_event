@@ -1,0 +1,38 @@
+.header {
+  padding: 15px 0;
+  transition: all 0.5s;
+  z-index: 997;
+  background: #000000;
+}
+.header.sticked {
+  background: #151414;
+  box-shadow: 0px 2px 20px rgba(var(--color-secondary-rgb), 0.1);
+}
+
+.header-container {
+  padding: 2px 55px;
+}
+
+.header .logo img {
+  max-height: 30px;
+  margin-right: 6px;
+}
+
+.header .logo h1 {
+  font-size: 32px;
+  font-weight: 300;
+  color: var(--color-secondary);
+  font-family: var(--font-secondary);
+}
+
+.header .logo h1 span {
+  color: var(--color-primary);
+  font-weight: 500;
+}
+#header.active {
+  background: red;
+}
+
+/* #header:hover {
+  background: red;
+} */
