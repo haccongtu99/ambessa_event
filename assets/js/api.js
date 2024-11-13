@@ -1,4 +1,5 @@
 export class Api {
+  // Expired in 24 hours --> Need get new key for testing
   API_KEY = 'RGAPI-6c3d4de8-299f-4096-b33f-299de933b995';
   async get(url) {
     const newUrl = url + `?api_key=${this.API_KEY}`;

@@ -29,10 +29,3 @@
   color: var(--color-primary);
   font-weight: 500;
 }
-#header.active {
-  background: red;
-}
-
-/* #header:hover {
-  background: red;
-} */

@@ -1,17 +1,33 @@
 .frame1 {
-  /* height: calc(100vh - var(--header-height)); */
-  /* min-height: calc(100vh - var(--header-height)); */
   height: 100vh;
   min-height: 100vh;
   position: relative;
 }
 
-#hero-animated .frame1 {
-  background-image: url(../img/main/background.webp);
-  background-size: cover;
+#hero-animated.frame1 {
+  background-size: 100% 100%;
   background-position: top;
   background-repeat: no-repeat;
+  background-image: url(../img/vng/frame1/background.png);
 }
+
+#hero-animated.frame2 {
+  background-size: 100% 100%;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-image: url(../img/vng/frame2/Overlay.png);
+}
+
+#hero-animated.frame3 {
+  background-size: 100% 100%;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-image: url(../img/vng/frame3/Overlay.png);
+}
+
+.frame2, .frame3 {
+  height: 100vh;
+} 
 
 .frame1 .hero-animated__content {
   position: relative;

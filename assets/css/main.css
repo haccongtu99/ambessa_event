@@ -4,59 +4,61 @@ body {
   padding: 0;
 }
 
-.hero-container {
-  height: 100vh;
-  width: 100%;
-  background-color: var(--red-base);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.slider-container {
-  background-color: green;
-  /* background-color: var(--secondary-color); */
-}
-
-.slider-container .slider-item {
-  background-color: red;
-  width: 200px;
-  height: 200px;
-}
-
 .sticky-social-icons {
   position: fixed;
   right: 0;
   top: 50%;
   transform: translateY(-50%);
   z-index: 3;
-  width: max-content; /* Ensure the container's width is as wide as the widest child */
+  width: max-content;
   margin-right: 20px;
 }
 
 .sticky-social-icons .social-icon {
-  margin: 5px 0;   /* Spacing between icons */
+  margin: 5px 0; 
   display: flex;
-  /*flex-direction: row-reverse;*/
 }
 
 .sticky-social-icons .social-icon img {
   display: block;
-  width: 60px;     /* Width of icons */
-  height: 60px;    /* Height of icons */
+  width: 60px;
+  height: 60px;
   transition: transform 0.3s ease;
 }
 
 .sticky-social-icons .social-icon:hover img {
-  transform: scale(1.1); /* Slightly increase size on hover */
+  transform: scale(1.1);
   filter:brightness(110%)
 }
 
-.sticky-social-icons .connect-message {
-  display: block;
-  margin-top: 10px;
-  width: auto;
-  height: 110px;
-  align-self: flex-end;
+@font-face {
+  font-family: Neue Frutiger World;
+  src: url(../fonts/NeueFrutigerWorld-Bold.woff) format("woff2"), url(../fonts/NeueFrutigerWorld-Bold.woff) format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap
+}
+
+@font-face {
+  font-family: Neue Frutiger World;
+  src: url(../fonts/NeueFrutigerWorld-Medium.woff) format("woff2"), url(../fonts/NeueFrutigerWorld-Medium.woff) format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap
+}
+
+@font-face {
+  font-family: 'GS3 TERRY JUNIOR DELUXE';
+  src: url('../fonts/GS3 TERRY JUNIOR DELUXE.OTF') format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap
+}
+
+@font-face {
+  font-family: 'GS3 Beatrice';
+  src: url('../fonts/GS3 BEATRICE MEDIUM.TTF') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap
 }

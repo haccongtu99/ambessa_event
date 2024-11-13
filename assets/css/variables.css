@@ -75,14 +75,15 @@
 
   --color-black: #000000;
   --color-black-rgb: 0, 0, 0;
-  
+
+  --color-metal-gold: #ffe0bb;
+  --color-metal-gold-rgb: 255, 224, 187;
 }
 
 /*--------------------------------------------------------------
 # 2. Override default Bootstrap variables
 --------------------------------------------------------------*/
 :root {
-
   --bs-blue: var(--color-blue);
   --bs-indigo: var(--color-indigo);
   --bs-purple: var(--color-purple);
