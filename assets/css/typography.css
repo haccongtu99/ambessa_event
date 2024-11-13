@@ -1,54 +1,61 @@
 .text-large {
-  font-size: 36px;
-  font-family: var(--font-primary);
-  font-weight: normal;
+	font-size: 36px;
+	font-family: var(--font-primary);
+	font-weight: normal;
 }
 
 .text-lg {
-  color: var(--color-white);
-  font-size: 32px;
-  font-family: var(--font-primary);
-  font-weight: normal;
+	color: var(--color-white);
+	font-size: 32px;
+	font-family: var(--font-primary);
+	font-weight: normal;
 }
 
 .text-md {
-  font-size: 18px;
-  color: var(--color-white);
-  font-family: var(--font-primary);
-  font-weight: normal;
+	font-size: 18px;
+	color: var(--color-white);
+	font-family: var(--font-primary);
+	font-weight: normal;
 }
 
 .text-sm {
-  font-size: 14px;
-  color: var(--color-white);
-  font-family: var(--font-primary);
-  font-weight: normal;
+	font-size: 14px;
+	color: var(--color-white);
+	font-family: var(--font-primary);
+	font-weight: normal;
+}
+
+.text-xs {
+	font-size: 12px;
+	color: var(--color-white);
+	font-family: var(--font-primary);
+	font-weight: normal;
 }
 
 .text-title-1 {
-  font-size: 32px;
-  color: var(--color-metal-gold);
-  font-family: var(--font-primary);
-  font-weight: normal;
+	font-size: 32px;
+	color: var(--color-metal-gold);
+	font-family: var(--font-primary);
+	font-weight: normal;
 }
 
 .text-title-2 {
-  font-size: 20px;
-  color: var(--color-metal-gold);
-  font-family: var(--font-primary);
-  font-weight: normal;
+	font-size: 20px;
+	color: var(--color-metal-gold);
+	font-family: var(--font-primary);
+	font-weight: normal;
 }
 
 .text-title-3 {
-  font-size: 18px;
-  color: var(--color-metal-gold);
-  font-family: var(--font-primary);
-  font-weight: normal;
+	font-size: 18px;
+	color: var(--color-metal-gold);
+	font-family: var(--font-primary);
+	font-weight: normal;
 }
 
 .text-title-normal {
-  font-size: 18px;
-  color: var(--color-white);
-  font-family: var(--font-primary);
-  font-weight: normal;
+	font-size: 18px;
+	color: var(--color-white);
+	font-family: var(--font-primary);
+	font-weight: normal;
 }
