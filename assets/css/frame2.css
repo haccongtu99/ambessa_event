@@ -1,0 +1,57 @@
+.section_bg {
+	background: url('../img/vng/frame2/Overlay.png') center center no-repeat;
+}
+
+.section_container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 58px 20px;
+}
+.title_container {
+}
+
+.title_container > h1 {
+	margin-top: 7px;
+}
+
+.title_container > h3 {
+	margin-top: 20px;
+}
+
+.champion_container {
+	gap: 45px;
+}
+.champion_img {
+}
+.champion_label {
+}
+
+.skill_container {
+	gap: 14px;
+	margin-top: 26px;
+}
+
+.skill_img {
+	min-width: 48px;
+	min-height: 48px;
+}
+
+.skill_divider {
+	height: 38px;
+	width: 2px;
+}
+
+.skill_flex {
+	gap: 11px;
+}
+
+.skill_content {
+	gap: 14px;
+	padding: 0 22px;
+}
+
+.skill_title {
+	font-size: 14px;
+}
