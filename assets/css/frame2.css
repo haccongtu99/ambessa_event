@@ -2,12 +2,19 @@
 	/* background: url('../img/vng/frame2/2_bg_mobile.png') center center no-repeat; */
 }
 
+#hero-animated.frame2 {
+	background-size: 100% 120%;
+	background-position: top;
+	background-repeat: no-repeat;
+	background-image: url(../img/vng/frame2/mobile/bg.png);
+}
+
 .section_container {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	padding: 58px 20px;
+	padding: 20px;
 }
 .title_container {
 }
@@ -18,25 +25,29 @@
 
 .title_container > h3 {
 	margin-top: 20px;
+	max-width: 350px;
 }
 
 .champion_container {
-	gap: 45px;
-	margin-top: 15px;
-}
-.champion_img {
-}
-.champion_label {
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
-.skill_container {
-	gap: 14px;
-	margin-top: 26px;
+.champion_avatar {
+	gap: 15px;
+	margin-top: 15px;
+	width: 100%;
+}
+
+.champion_label {
+	max-width: 240px;
 }
 
 .skill_img {
 	min-width: 48px;
 	min-height: 48px;
+	cursor: pointer;
 }
 
 .skill_divider {
@@ -46,6 +57,8 @@
 
 .skill_flex {
 	gap: 11px;
+	margin-top: 14px;
+	max-width: 350px;
 }
 
 .skill_content {
@@ -60,9 +73,11 @@
 .video-container {
 	position: relative;
 	width: 100%;
-	padding-bottom: 56.25%; /* 16:9 aspect ratio */
-	height: 0;
+	height: 100%;
 	overflow: hidden;
+	gap: 14px;
+	margin-top: 26px;
+	aspect-ratio: 4 / 3;
 }
 
 .video-container video {
@@ -71,4 +86,64 @@
 	left: 0;
 	width: 100%;
 	height: 100%;
+}
+
+@media only screen and (min-width: 1024px) {
+	#hero-animated.frame2 {
+		background-image: url(../img/vng/frame2/desktop/bg.png);
+	}
+	.title_container > h3 {
+		max-width: 100%;
+		font-size: 24px;
+	}
+
+	.title_container > h1 {
+		font-size: 40px;
+	}
+
+	.title_container > h6 {
+		max-width: 100%;
+		font-size: 20px;
+	}
+
+	.champion_container {
+		flex-direction: row;
+		justify-content: space-between;
+		max-width: 1280px;
+		margin-top: 65px;
+		gap: 32px;
+	}
+
+	.skill_container {
+		max-width: 644px;
+		justify-content: start;
+	}
+
+	.champion_avatar {
+		margin-top: 0;
+		max-width: 567px;
+		gap: 16px;
+	}
+
+	.champion_label {
+		max-width: 484px;
+	}
+
+	.skill_img {
+		min-width: 80px;
+		min-height: 80px;
+	}
+
+	.skill_flex {
+		max-width: 100%;
+	}
+
+	.skill_divider {
+		height: 62px;
+		width: 3px;
+	}
+
+	.video-container {
+		margin-top: 0;
+	}
 }

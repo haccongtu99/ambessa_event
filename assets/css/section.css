@@ -11,20 +11,6 @@
 	background-image: url(../img/vng/frame1/background.png);
 }
 
-#hero-animated.frame2 {
-	background-size: 100% 100%;
-	background-position: top;
-	background-repeat: no-repeat;
-	background-image: url(../img/vng/frame2/mobile/bg.png);
-}
-
-#hero-animated.frame3 {
-	background-size: 100% 100%;
-	background-position: top;
-	background-repeat: no-repeat;
-	background-image: url(../img/vng/frame3/Overlay.png);
-}
-
 .frame2,
 .frame3 {
 	height: 100vh;

@@ -1,0 +1,148 @@
+#hero-animated.frame3 {
+	background-size: 100% 100%;
+	background-position: top;
+	background-repeat: no-repeat;
+	background-image: url(../img/vng/frame3/mobile/bg.png);
+	height: 400px;
+}
+
+.champion_wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.champion_list {
+	height: 260px;
+	max-width: 390px;
+}
+
+.champion_item {
+	position: absolute;
+	cursor: pointer;
+}
+
+#jinx-3 {
+	width: 96px;
+	height: 276px;
+	left: 145px;
+	bottom: -15px;
+	z-index: 10;
+	background: url('../img/vng/frame3/mobile/jinx.png') center center no-repeat;
+}
+
+#jinx-3:hover {
+	height: 274px;
+	background-image: url('../img/vng/frame3/mobile/jinx_hover.png');
+}
+
+#jayce-3 {
+	width: 118px;
+	height: 252px;
+	left: 0px;
+	bottom: 0;
+	background: url('../img/vng/frame3/mobile/jayce.png') center center no-repeat;
+}
+
+#jayce-3:hover {
+	width: 124px;
+	background-image: url('../img/vng/frame3/mobile/jayce_hover.png');
+}
+
+#viktor-3 {
+	width: 71px;
+	height: 246px;
+	left: 65px;
+	bottom: 0;
+	background: url('../img/vng/frame3/mobile/viktor.png') center center no-repeat;
+}
+
+#viktor-3:hover {
+	height: 245px;
+	background-image: url('../img/vng/frame3/mobile/viktor_hover.png');
+}
+
+#heimerdinger-3 {
+	width: 74px;
+	height: 131px;
+	left: 65px;
+	bottom: 0;
+	background: url('../img/vng/frame3/mobile/heimerdinger.png') center center
+		no-repeat;
+}
+
+#heimerdinger-3:hover {
+	height: 129px;
+	background-image: url('../img/vng/frame3/mobile/heimerdinger_hover.png');
+}
+
+#ekko-3 {
+	width: 74px;
+	height: 255px;
+	left: 105px;
+	bottom: -5px;
+	background: url('../img/vng/frame3/mobile/ekko.png') center center no-repeat;
+}
+#ekko-3:hover {
+	height: 254px;
+	background-image: url('../img/vng/frame3/mobile/ekko_hover.png');
+}
+
+#vi-3 {
+	width: 123px;
+	height: 258px;
+	left: 170px;
+	bottom: -5px;
+	z-index: 9;
+	background: url('../img/vng/frame3/mobile/vi.png') center center no-repeat;
+}
+
+#vi-3:hover {
+	height: 257px;
+	width: 121px;
+	background-image: url('../img/vng/frame3/mobile/vi_hover.png');
+}
+
+#caitlyn-3 {
+	width: 71px;
+	height: 258px;
+	left: 230px;
+	bottom: 0;
+	z-index: 8;
+	background: url('../img/vng/frame3/mobile/caitlyn.png') center center
+		no-repeat;
+}
+
+#caitlyn-3:hover {
+	background-image: url('../img/vng/frame3/mobile/caitlyn_hover.png');
+}
+
+#mel-3 {
+	width: 80px;
+	height: 248px;
+	left: 250px;
+	bottom: 0;
+	z-index: 7;
+	background: url('../img/vng/frame3/mobile/mel.png') center center no-repeat;
+}
+
+#mel-3:hover {
+	background-image: url('../img/vng/frame3/mobile/mel_hover.png');
+}
+
+#ambessa-3 {
+	width: 92px;
+	height: 254px;
+	right: 0;
+	bottom: 0;
+	z-index: 6;
+	background: url('../img/vng/frame3/mobile/ambessa.png') center center
+		no-repeat;
+}
+
+#ambessa-3:hover {
+	width: 98px;
+	height: 253px;
+	background-image: url('../img/vng/frame3/mobile/ambessa_hover.png');
+}
