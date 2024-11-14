@@ -1,7 +1,3 @@
-.section_bg {
-	/* background: url('../img/vng/frame2/2_bg_mobile.png') center center no-repeat; */
-}
-
 #hero-animated.frame2 {
 	background-size: 100% 100%;
 	background-position: top;
@@ -90,7 +86,7 @@
 
 @media only screen and (min-width: 1024px) {
 	#hero-animated.frame2 {
-		background-image: url(../img/vng/frame2/desktop/bg.png);
+		background-image: url(../img/vng/frame2/desktop/2-bg.png);
 	}
 	.title_container > h3 {
 		max-width: 100%;
