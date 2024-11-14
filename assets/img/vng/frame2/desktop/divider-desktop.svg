@@ -1,0 +1,16 @@
+<svg id="DIVIDER" xmlns="http://www.w3.org/2000/svg" width="588.318" height="20.62" viewBox="0 0 588.318 20.62">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #c89b3c;
+        stroke-width: 1px;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path class="cls-1" d="M960.062,1880H1233.33m315.04,0H1275.11" transform="translate(-960.062 -1869.69)"/>
+  <path id="Shape_857_copy_3" data-name="Shape 857 copy 3" class="cls-1" d="M1263.78,1880l-9.56-9.59-9.57,9.59,9.57,9.6Z" transform="translate(-960.062 -1869.69)"/>
+  <path id="Shape_857_copy_2" data-name="Shape 857 copy 2" class="cls-1" d="M1268.95,1886.12l6.1-6.12-6.1-6.12" transform="translate(-960.062 -1869.69)"/>
+  <path id="Shape_857_copy" data-name="Shape 857 copy" class="cls-1" d="M1239.49,1873.88l-6.1,6.12,6.1,6.12" transform="translate(-960.062 -1869.69)"/>
+</svg>

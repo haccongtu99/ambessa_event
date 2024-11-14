@@ -50,14 +50,14 @@ $(document).ready(function () {
 	// Function to update the skill image source to active version
 	function updateSkillImage(skillKey) {
 		$('.skill_img img').each(function () {
-			const originalSrc = $(this).attr('src').replace('_active.png', '.png');
+			const originalSrc = $(this).attr('src').replace('-active.svg', '.svg');
 			$(this).attr('src', originalSrc); // Reset to original image
 			$(this).removeAttr('data-selected'); // Remove the selected attribute
 		});
 
 		// Set the clicked skill image to the active version and add the data-selected attribute
 		const activeImage = $(`#${skillKey} img`);
-		const activeSrc = activeImage.attr('src').replace('.png', '_active.png');
+		const activeSrc = activeImage.attr('src').replace('.svg', '-active.svg');
 		activeImage.attr('src', activeSrc);
 		activeImage.attr('data-selected', 'true');
 	}
@@ -84,7 +84,7 @@ $(document).ready(function () {
 			// On hover in, check if the image is already active
 			const skillKey = $(this).attr('id');
 			const activeImage = $(this).find('img');
-			const activeSrc = activeImage.attr('src').replace('.png', '_active.png');
+			const activeSrc = activeImage.attr('src').replace('.svg', '-active.svg');
 
 			// Only change the image to active version if it is not already active
 			if (!activeImage.attr('data-selected')) {
@@ -100,7 +100,7 @@ $(document).ready(function () {
 			if (!activeImage.attr('data-selected')) {
 				const originalSrc = activeImage
 					.attr('src')
-					.replace('_active.png', '.png');
+					.replace('-active.svg', '.svg');
 				activeImage.attr('src', originalSrc);
 			}
 		}
