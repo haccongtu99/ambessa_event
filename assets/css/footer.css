@@ -1,5 +1,25 @@
 #footer {
-  height: 60px;
   background: #000000;
-  z-index: 100;
+  color: var(--color-white);
+}
+            
+.footer-info {
+  font-size: 12px;
+  line-height: 16px;
+  color: #e6e6e6;
+  font-weight: 300;
+  margin-bottom: 25px;
+}
+.footer-link {
+  font-size: 16px;
+  line-height: 16px;
+  color: #e6e6e6;
+  font-weight: bold;
+}
+
+@media (max-width: 938px) {
+  /* .footer-info {
+    font-size: 10px;
+  } */
+   /* .footer .col-12 */
 }

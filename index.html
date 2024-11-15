@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,23 +19,22 @@
   <link rel="stylesheet" href="assets/css/custom-main.css">
   <link rel="stylesheet" href="assets/css/table.css">
   <link rel="stylesheet" href="assets/css/main.css">
-  <link rel="stylesheet" href="assets/css/frame_1.css">  
+  <link rel="stylesheet" href="assets/css/frame1.css">  
   <link rel="stylesheet" href="assets/css/frame2.css" />
   <link rel="stylesheet" href="assets/css/frame3.css" />
   <link rel="stylesheet" href="assets/css/modal.css" />
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css" />
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
 </head>
-
 <body>
   <div class="wrapper">
     <header id="header" class="header fixed-top" data-scrollto-offset="0">
       <div class="d-flex align-items-center relative header-container">
         <a href="." class="logo d-flex align-items-center scrollto me-lg-0">
-          <img src="assets/img/vng/Logo_18_plus_min.webp" alt="">
+          <img src="assets/img/vng/Logo_18_plus.png" alt="18 Plus">
         </a>
         <a href="." class="logo d-flex align-items-center scrollto me-lg-0">
-          <img src="assets/img/vng/Logo_Riot.png" alt="">
+          <img src="assets/img/vng/Logo_Riot.png" alt="Riot Games">
         </a>
         <nav id="navbar" class="navbar flex-grow-1">
           <ul>
@@ -46,54 +44,157 @@
           </ul>
         </nav>
         <a href="." class="btn-download">Tải game ngay!</a>
-        <i class="bi bi-list text-white btn-menu-mobile d-none"></i>
+        <div class="btn-menu-mobile">
+          <i class="btn-menu-mobile-icon bi bi-list text-white"></i>
+        </div>
         <div id="drawer" class="drawer__container">
-          <div class="d-flex justify-content-between align-items-center">
-            <i class="btn-close-drawer text-white bi bi-x-lg"></i>
+          <div style="height: 100px; padding: 43px 23px 0px 28px" class="d-flex justify-content-between align-items-center">
+            <div class="drawer-logo" style="width: 60px; height: 60px;"></div>
+            <div class="btn-menu-mobile">
+              <i class="btn-close-drawer text-white bi bi-x-lg"></i>
+            </div>
           </div>
-          <ul class="d-flex flex-column">
-            <li><a class="text-md" href="#">Thách thức chiến lang</a></li>
-            <li><a class="text-md" href="#">Tướng mới Ambessa</a></li>
-            <li><a class="text-md" href="#">Arcane 2</a></li>
-          </ul>
+          <div style="padding-left: 34px; row-gap: 2.25rem;" class="row">
+            <a href="#" class="col-12">
+              <p class="drawer-title">Thách thức chiến lang</p>
+            </a>
+            <a href="#" class="col-12">
+              <p class="drawer-title">Tướng mới Ambessa</p>
+            </a>
+            <a href="#" class="col-12">
+              <p class="drawer-title">Arcane 2</p>
+            </a>
+          </div>
           <a href="." class="btn-download-mobile">Tải game ngay!</a>
         </div>
       </div>
     </header>
-    <section id="hero-animated" class="frame1_container">
-      <img class="frame1_char" />
-      <img class="frame1_background" />
-      <div class="frame1_content h-100 w-100">
-        <div class="frame1_content-inner d-flex flex-column justify-content-center align-items-center">
-          <img class="frame1_title" loading="lazy" />
-          <h2 class="text-md">LÀM CHỦ AMBESSA, CHINH PHỤC MỌI CHIẾN TRẬN</h2>
-          <a href="#">
-            <img class="frame1_cta" loading="lazy" />
-          </a>
+
+    <!-- ------------------- FRAME 1 ------------------- -->
+    <section id="hero-animated" class="frame1">
+      <div class="frame1_char w-100 h-100"></div>
+      <div class="frame1_content w-100 h-100">
+        <div class="frame1_content-overview justify-content-center align-items-center">
+          <div class="d-flex flex-column justify-content-center align-items-center">
+            <img class="frame1_title" loading="lazy" />
+            <p class="title">LÀM CHỦ AMBESSA, CHINH PHỤC MỌI CHIẾN TRẬN</p>
+            <a href="#">
+              <img class="frame1_cta" loading="lazy" class="CTA" />
+            </a>
+          </div>
         </div>
         <div class="frame1_content-ranked">
-          <div class="ranked_item">
-            <div class="ranked_item-avatar">
-              <img class="ranked_item-thumb" src="assets/img/vng/frame1/ranked_icon_1.png" loading="lazy" />
-              <img class="ranked_item-top" src="assets/img/vng/frame1/I.png" loading="lazy" />
+          <div class="test2">
+            <div style="margin-bottom: 1rem;" class="d-flex justify-content-center">
+              <div class="row gy-2">
+                <div class="d-flex justify-content-center">
+                  <div class="ranked_item">
+                    <div class="ranked_item-avatar-inner relative">
+                      <img class="ranked_item-thumb" src="assets/img/vng/frame1/ranked_icon_1.png" loading="lazy" alt=""/>
+                      <img class="ranked_item-subthumb" src="assets/img/vng/frame1/ranked_icon_2.png" loading="lazy" alt=""/>
+                      <img class="ranked_item-top" src="assets/img/vng/frame1/I.png" loading="lazy" alt="" />
+                    </div>
+                    <div class="ranked_item-label">
+                      <img class="w-100 h-100" src="assets/img/vng/frame1/ranked_icon_label_1.png" loading="lazy" />
+                      <label class="text-sm">Điểm</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <div class="ranked_item">
+                    <div class="ranked_item-avatar-inner relative">
+                      <img class="ranked_item-thumb" src="assets/img/vng/frame1/ranked_icon_1.png" loading="lazy" alt=""/>
+                      <img class="ranked_item-subthumb" src="assets/img/vng/frame1/ranked_icon_2.png" loading="lazy" alt=""/>
+                      <img class="ranked_item-top" src="assets/img/vng/frame1/II.png" loading="lazy" alt="" />
+                    </div>
+                    <div class="ranked_item-label">
+                      <img class="w-100 h-100" src="assets/img/vng/frame1/ranked_icon_label_2.png" loading="lazy" />
+                      <label class="text-sm">Điểm</label>
+                    </div>
+                  </div>
+                  <div class="ranked_item">
+                    <div class="ranked_item-avatar-inner relative">
+                      <img class="ranked_item-thumb" src="assets/img/vng/frame1/ranked_icon_1.png" loading="lazy" alt=""/>
+                      <img class="ranked_item-subthumb" src="assets/img/vng/frame1/ranked_icon_2.png" loading="lazy" alt=""/>
+                      <img class="ranked_item-top" src="assets/img/vng/frame1/III.png" loading="lazy" alt="" />
+                    </div>
+                    <div class="ranked_item-label">
+                      <img class="w-100 h-100" src="assets/img/vng/frame1/ranked_icon_label_2.png" loading="lazy" alt="" />
+                      <label class="text-sm">Điểm</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="ranked_item-label">
-              <img src="assets/img/vng/frame1/ranked_icon_label_1.png" loading="lazy" />
-              <label class="text-sm">Điểm</label>
+            <div class="table-container d-flex justify-content-center align-items-center">
+              <table id="frame1_ranked_table" class="w-100">
+                <thead>
+                  <tr>
+                    <th>STT</th>
+                    <th>INGAME ID</th>
+                    <th>ĐIỂM THÔNG THẠO</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>1234567890</td>
+                    <td>1000</td>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>1234567890</td>
+                    <td>1000</td>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>1234567890</td>
+                    <td>1000</td>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>1234567890</td>
+                    <td>1000</td>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>1234567890</td>
+                    <td>1000</td>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>1234567890</td>
+                    <td>1000</td>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>1234567890</td>
+                    <td>1000</td>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>1234567890</td>
+                    <td>1000</td>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>1234567890</td>
+                    <td>1000</td>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>1234567890</td>
+                    <td>1000</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
-          <div class="d-flex align-items-center justify-content-between">
-            <div class="ranked_item">
-            </div>
-            <div class="ranked_item">
-            </div>
-          </div>
-          <!-- <div>
-          </div> -->
-          <!-- <img class="frame1_footer" loading="lazy" /> -->
         </div>
+        <div style="flex: 0 0 160px;"></div>
       </div>
     </section>
+
     <!-- ------------------- FRAME 2 ------------------- -->
     <section id="hero-animated" class="frame2">
       <div class="section_container">
@@ -217,13 +318,11 @@
     </section>
 
     <section id="hero-modal" class="position-absolute">
-
     </section>
-
     <button id="open-modal" class="btn-open">Open Modal</button>
 
     <!-- Modal -->
-    <div id="modal" class="modal">
+    <!-- <div id="modal" class="modal">
       <div class="modal-content">
         <div class="card">
           <div class="card-overlay">
@@ -263,17 +362,65 @@
           </div>
         </div>
       </div>
+    </div> -->
+  
+   <!-- FOOTER -->
+  <footer id="footer" class="footer">
+    <div class="w-100 d-flex flex-column justify-content-center  align-items-center text-center">
+      <div style="margin-bottom: 20px;" class="col-12 d-flex justify-content-center align-items-center">
+        <img src="assets/img/vng/Logo_Riot_VNG.png" alt="">
+      </div>
+      <div>
+        <p class="footer-info">
+          Chơi quá 180 phút một ngày sẽ ảnh hưởng xấu đến sức khỏe <br/>
+          Công Ty Cổ Phần VNG. Địa chỉ: Z06 đường số 13, Phường Tân Thuận Đông, Quận 7, Thành phố Hồ Chí Minh. <br />
+          Giấy phép cung cấp dịch vụ trò chơi điện tử G1 trên mạng số: 251/GP-BTTTT do Bộ Thông tin và Truyền thông cấp ngày 22/06/2015. <br />
+          Quyết định phê duyệt nội dung kịch bản trò chơi điện tử G1 trên mạng số: 15/QĐ-BTTTT do Bộ Thông tin và Truyền thông cấp ngày 08/01/2021.
+        </p>
+      </div>
+      <div class="row">
+        <div class="col-sm-4 col-12">
+          <a class="footer-link" href="https://www.riotgames.com/vi/privacy-notice" target="_blank">CHÍNH SÁCH BẢO MẬT</a>
+        </div>
+        <div class="col-sm-4 col-12">
+          <a class="footer-link" href="https://www.riotgames.com/vi/privacy-notice" target="_blank">ĐIỀU KHOẢN SỬ DỤNG (RIOT)</a>
+        </div>
+        <div class="col-sm-4 col-12">
+          <a class="footer-link" href="https://www.riotgames.com/vi/privacy-notice" target="_blank">ĐIỀU KHOẢN SỬ DỤNG (VNG)</a>
+        </div>
+      </div>
     </div>
-
+  </footer>
   </div>
   <div class="sticky-social-icons">
-    <div class="social-containter">
-      <a target="_blank" href="https://www.facebook.com/DTCLVN" target="_blank" class="social-icon"><img loading="lazy"
-          class="hover-light" src="assets/img/socials/FB.png" alt="Facebook" /></a>
-      <a target="_blank" href="https://www.youtube.com/@DTCLVN" target="_blank" class="social-icon"><img loading="lazy"
-          class="hover-light" src="assets/img/socials/YT.png" alt="Youtube" /></a>
-      <a target="_blank" href="https://www.instagram.com/DTCLVN" target="_blank" class="social-icon"><img loading="lazy"
-          class="hover-light" src="assets/img/socials/INST.png" alt="Instagram" /></a>
+    <div class="social-containter d-flex flex-column justify-content-between align-items-center">
+      <!-- // Need replace -->
+      <div class="w-100 flex-grow-1 social-icon">
+        <a href="https://www.facebook.com/DTCLVN" target="_blank">
+          <div class="position-relative h-100">
+            <img class="position-absolute top-50 start-50 translate-middle" src="assets/img/vng/frame1/social_icon_frame.png" alt=""/>
+            <img class="position-absolute top-50 start-50 translate-middle" loading="lazy" class="hover-light" src="assets/img/socials/FB.png" alt="Facebook" />
+          </div>
+        </a>
+      </div>
+      <!-- // Need replace -->
+      <div class="w-100 flex-grow-1 social-icon">
+        <a href="https://www.youtube.com/@DTCLVN" target="_blank">
+          <div class="position-relative h-100 hover-light">
+            <img class="position-absolute top-50 start-50 translate-middle" src="assets/img/vng/frame1/social_icon_frame.png" alt=""/>
+            <img class="position-absolute top-50 start-50 translate-middle" loading="lazy" src="assets/img/socials/YT.png" alt="Youtube" />
+          </div>
+        </a>
+      </div>
+      <!-- // Need replace -->
+      <div class="w-100 flex-grow-1 social-icon hover-light">
+        <a href="https://www.instagram.com/DTCLVN" target="_blank">
+          <div class="position-relative h-100">
+            <img class="position-absolute top-50 start-50 translate-middle" src="assets/img/vng/frame1/social_icon_frame.png" alt=""/>
+            <img class="position-absolute top-50 start-50 translate-middle" loading="lazy"src="assets/img/socials/Tiktok.png" alt="Instagram" />
+          </div>
+        </a>
+      </div>
     </div>
   </div>
 </body>

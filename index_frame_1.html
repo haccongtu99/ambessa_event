@@ -5,7 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
+    integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="assets/css/typography.css">
   <link rel="stylesheet" href="assets/css/variables.css">
   <link rel="stylesheet" href="assets/css/animation.css">
@@ -17,19 +19,22 @@
   <link rel="stylesheet" href="assets/css/custom-main.css">
   <link rel="stylesheet" href="assets/css/table.css">
   <link rel="stylesheet" href="assets/css/main.css">
-  <link rel="stylesheet" href="assets/css/frame_1.css">
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"/>
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"/>
+  <link rel="stylesheet" href="assets/css/frame1.css">  
+  <link rel="stylesheet" href="assets/css/frame2.css" />
+  <link rel="stylesheet" href="assets/css/frame3.css" />
+  <link rel="stylesheet" href="assets/css/modal.css" />
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
 </head>
 <body>
   <div class="wrapper">
     <header id="header" class="header fixed-top" data-scrollto-offset="0">
       <div class="d-flex align-items-center relative header-container">
         <a href="." class="logo d-flex align-items-center scrollto me-lg-0">
-          <img src="assets/img/vng/Logo_18_plus.png" alt="">
+          <img src="assets/img/vng/Logo_18_plus.png" alt="18 Plus">
         </a>
         <a href="." class="logo d-flex align-items-center scrollto me-lg-0">
-          <img src="assets/img/vng/Logo_Riot.png" alt="">
+          <img src="assets/img/vng/Logo_Riot.png" alt="Riot Games">
         </a>
         <nav id="navbar" class="navbar flex-grow-1">
           <ul>
@@ -50,175 +55,382 @@
             </div>
           </div>
           <div style="padding-left: 34px; row-gap: 2.25rem;" class="row">
-            <div class="col-12">
+            <a href="#" class="col-12">
               <p class="drawer-title">Thách thức chiến lang</p>
-            </div>
-            <div class="col-12">
+            </a>
+            <a href="#" class="col-12">
               <p class="drawer-title">Tướng mới Ambessa</p>
-            </div>
-            <div class="col-12">
+            </a>
+            <a href="#" class="col-12">
               <p class="drawer-title">Arcane 2</p>
-            </div>
+            </a>
           </div>
           <a href="." class="btn-download-mobile">Tải game ngay!</a>
         </div>
       </div>
     </header>
 
-    <!-- FRAME 1 -->
-    <section id="hero-animated" class="frame1_container">
-      <div class="frame1_char-wrapper">
-        <img class="frame1_char" />
-        <img class="frame1_background" />
-      </div>
-      <div class="frame1_content h-100 w-100">
+    <!-- ------------------- FRAME 1 ------------------- -->
+    <section id="hero-animated" class="frame1">
+      <div class="frame1_char w-100 h-100"></div>
+      <div class="frame1_content w-100 h-100">
         <div class="frame1_content-overview justify-content-center align-items-center">
-          <div class="col-12 d-flex justify-content-center">
+          <div class="d-flex flex-column justify-content-center align-items-center">
             <img class="frame1_title" loading="lazy" />
-          </div>
-          <div class="col-12 d-flex justify-content-center mb-2">
             <p class="title">LÀM CHỦ AMBESSA, CHINH PHỤC MỌI CHIẾN TRẬN</p>
-          </div>
-          <div class="col-12 d-flex justify-content-center mb-2">
             <a href="#">
-              <img class="frame1_cta" loading="lazy" />
+              <img class="frame1_cta" loading="lazy" class="CTA" />
             </a>
           </div>
         </div>
         <div class="frame1_content-ranked">
-          <div class="test2 relative">
-            <div class="d-flex justify-content-center">
+          <div class="test2">
+            <div style="margin-bottom: 1rem;" class="d-flex justify-content-center">
               <div class="row gy-2">
-                <div class="col-12 d-flex justify-content-center">
+                <div class="d-flex justify-content-center">
                   <div class="ranked_item">
                     <div class="ranked_item-avatar-inner relative">
-                      <img class="ranked_item-thumb" src="assets/img/vng/frame1/ranked_icon_1.png" loading="lazy" />
-                      <img class="ranked_item-top" src="assets/img/vng/frame1/I.png" loading="lazy" />
+                      <img class="ranked_item-thumb" src="assets/img/vng/frame1/ranked_icon_1.png" loading="lazy" alt=""/>
+                      <img class="ranked_item-subthumb" src="assets/img/vng/frame1/ranked_icon_2.png" loading="lazy" alt=""/>
+                      <img class="ranked_item-top" src="assets/img/vng/frame1/I.png" loading="lazy" alt="" />
                     </div>
                     <div class="ranked_item-label">
-                      <img src="assets/img/vng/frame1/ranked_icon_label_1.png" loading="lazy" />
+                      <img class="w-100 h-100" src="assets/img/vng/frame1/ranked_icon_label_1.png" loading="lazy" />
                       <label class="text-sm">Điểm</label>
                     </div>
                   </div>
                 </div>
-                <div class="col-12 d-flex justify-content-between">
-                  <!-- <div class="d-flex align-items-center justify-content-between w-100"> -->
+                <div class="d-flex justify-content-between">
                   <div class="ranked_item">
                     <div class="ranked_item-avatar-inner relative">
-                      <img class="ranked_item-thumb" src="assets/img/vng/frame1/ranked_icon_1.png" loading="lazy" />
-                      <img class="ranked_item-top" src="assets/img/vng/frame1/II.png" loading="lazy" />
+                      <img class="ranked_item-thumb" src="assets/img/vng/frame1/ranked_icon_1.png" loading="lazy" alt=""/>
+                      <img class="ranked_item-subthumb" src="assets/img/vng/frame1/ranked_icon_2.png" loading="lazy" alt=""/>
+                      <img class="ranked_item-top" src="assets/img/vng/frame1/II.png" loading="lazy" alt="" />
                     </div>
                     <div class="ranked_item-label">
-                      <img src="assets/img/vng/frame1/ranked_icon_label_2.png" loading="lazy" />
+                      <img class="w-100 h-100" src="assets/img/vng/frame1/ranked_icon_label_2.png" loading="lazy" />
                       <label class="text-sm">Điểm</label>
                     </div>
                   </div>
                   <div class="ranked_item">
                     <div class="ranked_item-avatar-inner relative">
-                      <img class="ranked_item-thumb" src="assets/img/vng/frame1/ranked_icon_1.png" loading="lazy" />
-                      <img class="ranked_item-top" src="assets/img/vng/frame1/III.png" loading="lazy" />
+                      <img class="ranked_item-thumb" src="assets/img/vng/frame1/ranked_icon_1.png" loading="lazy" alt=""/>
+                      <img class="ranked_item-subthumb" src="assets/img/vng/frame1/ranked_icon_2.png" loading="lazy" alt=""/>
+                      <img class="ranked_item-top" src="assets/img/vng/frame1/III.png" loading="lazy" alt="" />
                     </div>
                     <div class="ranked_item-label">
-                      <img src="assets/img/vng/frame1/ranked_icon_label_2.png" loading="lazy" />
+                      <img class="w-100 h-100" src="assets/img/vng/frame1/ranked_icon_label_2.png" loading="lazy" alt="" />
                       <label class="text-sm">Điểm</label>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="frame1_ranked_bg">
-              <img class="frame1_ranked_bg_img" />
-              <div class="table-container">
-                <table id="frame1_ranked_table" class="w-100">
-                  <thead>
-                    <tr>
-                      <th>STT</th>
-                      <th>INGAME ID</th>
-                      <th>ĐIỂM THÔNG THẠO</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>1</td>
-                      <td>1234567890</td>
-                      <td>1000</td>
-                    </tr>
-                    <tr>
-                      <td>1</td>
-                      <td>1234567890</td>
-                      <td>1000</td>
-                    </tr>
-                    <tr>
-                      <td>1</td>
-                      <td>1234567890</td>
-                      <td>1000</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
+            <div class="table-container d-flex justify-content-center align-items-center">
+              <table id="frame1_ranked_table" class="w-100">
+                <thead>
+                  <tr>
+                    <th>STT</th>
+                    <th>INGAME ID</th>
+                    <th>ĐIỂM THÔNG THẠO</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>1234567890</td>
+                    <td>1000</td>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>1234567890</td>
+                    <td>1000</td>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>1234567890</td>
+                    <td>1000</td>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>1234567890</td>
+                    <td>1000</td>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>1234567890</td>
+                    <td>1000</td>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>1234567890</td>
+                    <td>1000</td>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>1234567890</td>
+                    <td>1000</td>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>1234567890</td>
+                    <td>1000</td>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>1234567890</td>
+                    <td>1000</td>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>1234567890</td>
+                    <td>1000</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
-          </div>
           </div>
         </div>
+        <div style="flex: 0 0 160px;"></div>
+      </div>
     </section>
 
-    <!-- FOOTER -->
-    <footer id="footer" class="footer">
-      <div class="footer-content">
-        <div class="container">
-          <div class="row">
-  
-            <div class="col-lg-12 col-md-12 text-center mb-20 ">
-              <img  class="footer-logo" src="assets/img/vng/footer_logo.png" loading="lazy">
-              <!-- <img  class="footer-logo" src="assets/img/vng/logo_vng.webp"  loading="lazy" width="146px" height="37px"> -->
+    <!-- ------------------- FRAME 2 ------------------- -->
+    <section id="hero-animated" class="frame2">
+      <div class="section_container">
+        <div class="title_container color-white text-center">
+          <h6>
+            vị tướng thứ 169 đã cập bến
+          </h6>
+
+          <h1>ambessa medarda</h1>
+
+          <h3>
+            &ldquo;Sức mạnh được đánh đổi bằng sự hy sinh - và ta đã cho đi tất cả.&rdquo;
+          </h3>
+        </div>
+
+        <div class="d-flex champion_container w-100">
+          <div class="champion_avatar ">
+            <img src="./assets/img/vng/frame2/mobile/ambessa-mobile.png" alt="Ambessa Avatar"
+              class="champion_img w-100" />
+
+            <h6 class="champion_label">
+              &ldquo;Địa vị của ta trên thế giới này do chính tay ta gây dựng. <br /> Bằng
+              cả xương máu.&rdquo;
+            </h6>
+          </div>
+
+          <div class="d-flex flex-column justify-content-center align-items-center w-100 skill_container">
+            <div class="w-100 d-flex flex-column gap-3 video-container">
+              <video controls>
+                <source src="./assets/video/E.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
             </div>
-  
-            <div class="col-lg-12 col-md-12 text-center">
-              <div class="riotbar-copyright">
-                <p class="riotbar-footer-copyright-text d-block d-sm-none">
-                  © 2024 Riot Games, Inc. <br/>
-                  Bản quyền trò chơi thuộc Riot Games Inc. và Công Ty Cổ Phần VNG phân phối độc quyền tại Việt Nam. <br/>
-                  Công Ty Cổ Phần VNG. Địa chỉ: Lô 03b-04-05-06-07, đường số 13, khu Công Nghiệp, Khu Chế Xuất Tân Thuận, phường Tân Thuận Đông, Quận 7, TP.HCM. <br/>
-                  Quyết định phê duyệt nội dung kịch bản trò chơi điện tử G1 trên mạng số: 15/QĐ-BTTTT do Bộ Thông tin và Truyền thông cấp ngày 08/01/2021
-                </p>
-                <p class="riotbar-footer-copyright-text d-none d-sm-block">
-                  © 2024 Riot Games, Inc. <br/>
-                  Bản quyền trò chơi thuộc Riot Games Inc. và Công Ty Cổ Phần VNG phân phối độc quyền tại Việt Nam. <br/>
-                  Công Ty Cổ Phần VNG. Địa chỉ: Lô 03b-04-05-06-07, đường số 13, khu Công Nghiệp, Khu Chế Xuất Tân Thuận, phường Tân Thuận Đông, Quận 7, TP.HCM. <br/>
-                  Quyết định phê duyệt nội dung kịch bản trò chơi điện tử G1 trên mạng số: 15/QĐ-BTTTT do Bộ Thông tin và Truyền thông cấp ngày 08/01/2021
-                </p>
+
+            <div class="d-flex justify-content-between align-items-center skill_flex">
+              <div class="skill_img" id="Passive">
+                <img src="./assets/img/vng/frame2/desktop/P.svg" alt="Passive" class="w-100 h-100" />
+              </div>
+
+              <div class="vr w-2 bg-red my-auto skill_divider"></div>
+
+              <div class="skill_img" id="Q">
+                <img src="./assets/img/vng/frame2/desktop/Q.svg" alt="Kỹ năng Q" class="w-100 h-100" />
+              </div>
+
+              <div class="vr invisible"></div>
+
+              <div class="skill_img" id="W">
+                <img src="./assets/img/vng/frame2/desktop/W.svg" alt="Kỹ năng W" class="w-100 h-100" />
+              </div>
+
+              <div class="vr invisible"></div>
+
+              <div class="skill_img" id="E">
+                <img src="./assets/img/vng/frame2/desktop/E.svg" alt="Kỹ năng E" class="w-100 h-100" />
+              </div>
+
+              <div class="vr invisible"></div>
+
+              <div class="skill_img" id="R">
+                <img src="./assets/img/vng/frame2/desktop/R.svg" alt="Kỹ năng R" class="w-100 h-100" />
               </div>
             </div>
-  
-            <div class="col-lg-12 col-md-12 text-center">
-              <div>
-                <p><a class="footer-link" href="https://www.riotgames.com/vi/privacy-notice" target="_blank">CHÍNH SÁCH QUYỀN RIÊNG TƯ</a> <a class="footer-link" target="_blank" href="https://www.riotgames.com/vi/terms-of-service">ĐIỀU KHOẢN DỊCH VỤ</a></p>
-              </div>
-            </div>
-            <div class="col-lg-12 col-md-12 text-center">
-              <img  src="assets/img/vng/vn-18plus.webp" loading="lazy" width="224px" height="100px">
+
+            <img src="./assets/img/vng/frame2/mobile/divider-mobile.svg" alt="divider" class="mobile-divider w-100">
+
+            <img src="./assets/img/vng/frame2/desktop/divider-desktop.svg" alt="divider" class="desktop-divider w-100">
+
+            <div class="skill_content d-flex flex-column w-100">
+              <h3></h3>
+              <p><span>Nội tại:</span>
+              </p>
+              <p><span>Kích hoạt: </span></p>
             </div>
           </div>
         </div>
       </div>
-    </footer><!-- End Footer -->
-    <!-- <footer id="footer" class="footer">
-      <div class="footer-container">
-        <div class="footer-info">
+    </section>
+
+    <section id="hero-animated" class="frame3">
+      <div class="position-relative w-100 h-100">
+        <div class="posistion-absolute top-0 start-0">
+          <img src="./assets/img/vng/frame3/mobile/border-top.png" alt="border-top">
+        </div>
+        <div class="position-absolute bottom-0 end-0">
+          <img src="./assets/img/vng/frame3/mobile/border-bottom.png" alt="border-bottom">
+        </div>
+
+        <div class="champion_wrapper">
+          <div class="champion_list d-flex position-relative justify-content-between w-100">
+            <div class="champion_item" id="jayce-3">
+            </div>
+
+            <div class="champion_item" id="viktor-3">
+            </div>
+
+            <div class="champion_item" id="heimerdinger-3">
+            </div>
+
+            <div class="champion_item" id="ekko-3">
+            </div>
+
+            <div class="champion_item" id="jinx-3">
+            </div>
+
+            <div class="champion_item" id="vi-3">
+            </div>
+
+            <div class="champion_item" id="caitlyn-3">
+            </div>
+
+            <div class="champion_item" id="mel-3">
+            </div>
+
+            <div class="champion_item" id="ambessa-3">
+
+            </div>
+          </div>
         </div>
       </div>
-    </footer> -->
+    </section>
+
+    <section id="hero-modal" class="position-absolute">
+    </section>
+    <button id="open-modal" class="btn-open">Open Modal</button>
+
+    <!-- Modal -->
+    <!-- <div id="modal" class="modal">
+      <div class="modal-content">
+        <div class="card">
+          <div class="card-overlay">
+            <button id="image-button" class="card-button">
+              <img src="./assets/img/vng/frame3/modal/button.png" alt="Image Button" />
+            </button>
+
+            <button id="x-button" class="x-button close">
+              <img src="./assets/img/vng/frame3/modal/X.svg" alt="X Button" />
+            </button>
+
+            <img src="./assets/img/vng/frame3/modal/arcane.png" alt="X Button" class="arcane-title" />
+
+            <div class="modal-info">
+              <h1>JINX</h1>
+              <img src="./assets/img/vng/frame3/modal/jinx-ava.svg" alt="jinx-avatar">
+
+              <div class="d-flex justify-content-between modal-champ-info">
+                <div class="modal-role d-flex align-items-center flex-column h-100 justify-content-between">
+                  <h6>Vai trò</h6>
+                  <img src="./assets/img/vng/frame3/modal/jinx-skill.svg" alt="jinx-level">
+                  <p>Xạ thủ</p>
+                </div>
+
+                <div class="modal-level d-flex align-items-center flex-column h-100 justify-content-between">
+                  <h6>Độ khó</h6>
+                  <img src="./assets/img/vng/frame3/modal/level-2.svg" alt="jinx-level">
+                  <p>Trung bình</p>
+                </div>
+              </div>
+            </div>
+            <p class="modal-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
+              voluptatum veritatis amet numquam,
+              quod et similique perferendis, quos sapiente repudiandae recusandae explicabo quam aliquid dolorum,
+              error nisi magni alias? Sapiente.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div> -->
+  
+   <!-- FOOTER -->
+  <footer id="footer" class="footer">
+    <div class="w-100 d-flex flex-column justify-content-center  align-items-center text-center">
+      <div style="margin-bottom: 20px;" class="col-12 d-flex justify-content-center align-items-center">
+        <img src="assets/img/vng/Logo_Riot_VNG.png" alt="">
+      </div>
+      <div>
+        <p class="footer-info">
+          Chơi quá 180 phút một ngày sẽ ảnh hưởng xấu đến sức khỏe <br/>
+          Công Ty Cổ Phần VNG. Địa chỉ: Z06 đường số 13, Phường Tân Thuận Đông, Quận 7, Thành phố Hồ Chí Minh. <br />
+          Giấy phép cung cấp dịch vụ trò chơi điện tử G1 trên mạng số: 251/GP-BTTTT do Bộ Thông tin và Truyền thông cấp ngày 22/06/2015. <br />
+          Quyết định phê duyệt nội dung kịch bản trò chơi điện tử G1 trên mạng số: 15/QĐ-BTTTT do Bộ Thông tin và Truyền thông cấp ngày 08/01/2021.
+        </p>
+      </div>
+      <div class="row">
+        <div class="col-sm-4 col-12">
+          <a class="footer-link" href="https://www.riotgames.com/vi/privacy-notice" target="_blank">CHÍNH SÁCH BẢO MẬT</a>
+        </div>
+        <div class="col-sm-4 col-12">
+          <a class="footer-link" href="https://www.riotgames.com/vi/privacy-notice" target="_blank">ĐIỀU KHOẢN SỬ DỤNG (RIOT)</a>
+        </div>
+        <div class="col-sm-4 col-12">
+          <a class="footer-link" href="https://www.riotgames.com/vi/privacy-notice" target="_blank">ĐIỀU KHOẢN SỬ DỤNG (VNG)</a>
+        </div>
+      </div>
+    </div>
+  </footer>
   </div>
   <div class="sticky-social-icons">
-    <div class="social-containter">
-      <a target="_blank" href="https://www.facebook.com/DTCLVN" target="_blank" class="social-icon"><img loading="lazy" class="hover-light" src="assets/img/socials/FB.png" alt="Facebook"/></a>
-      <a target="_blank" href="https://www.youtube.com/@DTCLVN" target="_blank" class="social-icon"><img loading="lazy" class="hover-light" src="assets/img/socials/YT.png" alt="Youtube"/></a>
-      <a target="_blank" href="https://www.instagram.com/DTCLVN" target="_blank" class="social-icon"><img loading="lazy" class="hover-light" src="assets/img/socials/INST.png" alt="Instagram"/></a>
+    <div class="social-containter d-flex flex-column justify-content-between align-items-center">
+      <!-- // Need replace -->
+      <div class="w-100 flex-grow-1 social-icon">
+        <a href="https://www.facebook.com/DTCLVN" target="_blank">
+          <div class="position-relative h-100">
+            <img class="position-absolute top-50 start-50 translate-middle" src="assets/img/vng/frame1/social_icon_frame.png" alt=""/>
+            <img class="position-absolute top-50 start-50 translate-middle" loading="lazy" class="hover-light" src="assets/img/socials/FB.png" alt="Facebook" />
+          </div>
+        </a>
+      </div>
+      <!-- // Need replace -->
+      <div class="w-100 flex-grow-1 social-icon">
+        <a href="https://www.youtube.com/@DTCLVN" target="_blank">
+          <div class="position-relative h-100 hover-light">
+            <img class="position-absolute top-50 start-50 translate-middle" src="assets/img/vng/frame1/social_icon_frame.png" alt=""/>
+            <img class="position-absolute top-50 start-50 translate-middle" loading="lazy" src="assets/img/socials/YT.png" alt="Youtube" />
+          </div>
+        </a>
+      </div>
+      <!-- // Need replace -->
+      <div class="w-100 flex-grow-1 social-icon hover-light">
+        <a href="https://www.instagram.com/DTCLVN" target="_blank">
+          <div class="position-relative h-100">
+            <img class="position-absolute top-50 start-50 translate-middle" src="assets/img/vng/frame1/social_icon_frame.png" alt=""/>
+            <img class="position-absolute top-50 start-50 translate-middle" loading="lazy"src="assets/img/socials/Tiktok.png" alt="Instagram" />
+          </div>
+        </a>
+      </div>
     </div>
   </div>
 </body>
 <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+  integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
 <script type="module" src="assets/js/main.js"></script>
+<script type="module" src="assets/js/skill.js"></script>
+<script type="module" src="assets/js/modal.js"></script>
+
 </html>

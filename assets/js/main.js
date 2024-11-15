@@ -5,7 +5,7 @@ let background_url = '';
 let button_url = '';
 let title_url = '';
 let ranked_bg_url = '';
-// default mode
+let screenWidth = window.innerWidth;
 let mode = 'desktop';
 
 let isMobileFlag = false;
@@ -19,6 +19,20 @@ function isMobileScreen() {
 function isMobileDevice() {
   return /Android|iPhone/i.test(navigator.userAgent);
 }
+
+function isXsScreen() {
+  return window.innerWidth <= 768;
+}
+
+function isSmScreen() {
+  return window.innerWidth <= 992;
+}
+
+
+function isMdScreen() {
+  return window.innerWidth <= 1280;
+}
+
 
 const raw_data = [
   {
@@ -49,37 +63,25 @@ const raw_data = [
 ];
 
 function handleRankedTable() {
-  // $('.frame1_ranked_bg').css('height', '200px');
-  // $('#frame1_ranked_table').DataTable({
-  //   data: raw_data,
-  //   columns: [
-  //     { title: 'stt' },
-  //     { title: 'ingame_id' },
-  //     { title: 'diem_thong_thao' },
-  //   ],
-  // });
+  console.log('>>> handleRankedTable..');
 }
 
 function handleMode() {
   mode = isMobileFlag ? 'mobile' : 'desktop';
-  ambessa_url = `assets/img/vng/frame1/${mode}_char_ambessa.png`;
-  background_url = `assets/img/vng/frame1/${mode}_background.png`;
-  button_url = `assets/img/vng/frame1/${mode}_cta.png`;
-  title_url = `assets/img/vng/frame1/${mode}_title.png`;
-  ranked_bg_url = `assets/img/vng/frame1/${mode}_ranked_bg.png`;
+  screenWidth = window.innerWidth;
 
-  $('.frame1_char').attr('src', ambessa_url);
-  $('.frame1_background').attr('src', background_url);
+  button_url = screenWidth <= 390 ? `assets/img/vng/frame1/mobile/mobile_cta.png` : `assets/img/vng/frame1/desktop/desktop_cta.png`;
+  title_url = screenWidth <= 390 ? `assets/img/vng/frame1/mobile/mobile_title.png` : `assets/img/vng/frame1/desktop/desktop_title.png`;
+  ranked_bg_url = screenWidth <= 390 ? `assets/img/vng/frame1/mobile/mobile_ranked_bg.png` : `assets/img/vng/frame1/desktop/desktop_ranked_bg.png`;
+
   $('.frame1_cta').attr('src', button_url);
   $('.frame1_title').attr('src', title_url);
   $('.frame1_ranked_bg_img').attr('src', ranked_bg_url);
 
   if (!isMobileFlag) {
-    $('.frame1_mobile_ranked_bg').addClass('d-none');
     $('#header').removeClass('header-mobile');
     $('#drawer').addClass('d-none');
   } else {
-    $('.frame1_mobile_ranked_bg').removeClass('d-none');
     $('#header').addClass('header-mobile');
     $('#drawer').removeClass('d-none');
   }
@@ -92,12 +94,12 @@ function isMobile() {
 
 function handleDrawer() {
   $('.btn-menu-mobile-icon').click(() => {
+    console.log('>>> handleDrawer..');
     $('#drawer').addClass('drawer-animate-fadein');
     $('#drawer').removeClass('drawer-animate-fadeout');
   })
 
   $('.btn-close-drawer').click(() => {
-    console.log('Click close...');
     $('#drawer').addClass('drawer-animate-fadeout');
     $('#drawer').removeClass('drawer-animate-fadein');
   });

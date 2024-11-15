@@ -1,8 +1,8 @@
-.frame1 {
+/* .frame1 {
 	height: 100vh;
 	min-height: 100vh;
 	position: relative;
-}
+} */
 
 #hero-animated.frame1 {
 	background-size: 100% 100%;

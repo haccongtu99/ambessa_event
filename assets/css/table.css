@@ -1,10 +1,11 @@
 table > thead > tr > th:first-child {
-  min-width: 50px
+  min-width: 50px;
 }
 
 table > thead > tr > th {
+  padding-left: 1rem;
   min-width: 50px;
-  font-size: 25px;
+  font-size: clamp(0.875rem, 1vw + 0.875rem, 1.875rem);
   line-height: 47px;
   text-transform: uppercase;
   font-family: 'Spiegel Bold';
@@ -18,6 +19,7 @@ table > thead > tr > th:first-child {
 }
 table > tbody > tr {
   position: relative;
+  height: 20px;
 }
 
 table > tbody > tr::after {
@@ -25,6 +27,8 @@ table > tbody > tr::after {
   display: block;
   height: 2px;
   width: 100%;
+  /* left: 10%; */
+  /* right: 10%; */
   left: 0;
   bottom: 0;
   position: absolute;
@@ -34,7 +38,8 @@ table > tbody > tr::after {
 
 table > tbody > tr > td {
   position: relative;
-  font-size: 30px;
+  padding-left: 1rem;
+  font-size: clamp(0.875rem, 1vw + 0.875rem, 1.875rem);
   font-family: 'Spiegel Bold';
   text-transform: uppercase;
   color: var(--color-white);
@@ -53,15 +58,6 @@ table > tbody > tr > td:first-child {
 table > tbody > tr:nth-child(-n+3) > td {
   color: var(--color-orange);
   font-family: 'Spiegel Bold';
-}
-
-@media (max-width: 938px) {
-  table > thead > tr > th {
-    font-size: 14px;
-  }
-  table > tbody > tr > td {
-    font-size: 14px;
-  }
 }
 
 
