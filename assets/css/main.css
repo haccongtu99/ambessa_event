@@ -31,37 +31,166 @@ body {
 	filter: brightness(110%);
 }
 
+/* FONTS: BEAUFORTFORLOL */
 @font-face {
-	font-family: Neue Frutiger World;
-	src: url(../fonts/NeueFrutigerWorld-Bold.woff) format('woff2'),
-		url(../fonts/NeueFrutigerWorld-Bold.woff) format('woff');
+	font-family: 'Beaufort For LOL Bold';
+	src: url('../fonts/BEAUFORTFORLOL-BOLD.OTF') format('opentype');
 	font-weight: 600;
 	font-style: normal;
 	font-display: swap;
 }
 
 @font-face {
-	font-family: Neue Frutiger World;
-	src: url(../fonts/NeueFrutigerWorld-Medium.woff) format('woff2'),
-		url(../fonts/NeueFrutigerWorld-Medium.woff) format('woff');
+	font-family: 'Beaufort For LOL Bold Italic';
+	src: url('../fonts/BEAUFORTFORLOL-BOLDITALIC.OTF') format('opentype');
+	font-weight: 600;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Beaufort For LOL Heavy';
+	src: url('../fonts/BEAUFORTFORLOL-HEAVY.OTF') format('opentype');
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Beaufort For LOL Heavy Italic';
+	src: url('../fonts/BEAUFORTFORLOL-HEAVYITALIC.OTF') format('opentype');
+	font-weight: 600;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Beaufort For LOL Light';
+	src: url('../fonts/BEAUFORTFORLOL-LIGHT.OTF') format('opentype');
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Beaufort For LOL Light Italic';
+	src: url('../fonts/BEAUFORTFORLOL-LIGHTITALIC.OTF') format('opentype');
+	font-weight: 300;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Beaufort For LOL Medium';
+	src: url('../fonts/BEAUFORTFORLOL-MEDIUM.OTF') format('opentype');
 	font-weight: 400;
 	font-style: normal;
 	font-display: swap;
 }
 
 @font-face {
-	font-family: 'GS3 TERRY JUNIOR DELUXE';
-	src: url('../fonts/GS3 TERRY JUNIOR DELUXE.OTF') format('opentype');
+	font-family: 'Beaufort For LOL Medium Italic';
+	src: url('../fonts/BEAUFORTFORLOL-MEDIUMITALIC.OTF') format('opentype');
+	font-weight: 400;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Beaufort For LOL Regular';
+	src: url('../fonts/BEAUFORTFORLOL-REGULAR.OTF') format('opentype');
 	font-weight: 400;
 	font-style: normal;
 	font-display: swap;
 }
 
+@font-face {
+	font-family: 'Beaufort For LOL Regular Italic';
+	src: url('../fonts/BEAUFORTFORLOL-REGULARITALIC.OTF') format('opentype');
+	font-weight: 400;
+	font-style: italic;
+	font-display: swap;
+}
+
+/* FONTS: SPIEGEL */
+@font-face {
+	font-family: 'Spiegel Regular';
+	src: url('../fonts/SPIEGEL-REGULAR.OTF') format('opentype');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Spiegel Bold';
+	src: url('../fonts/SPIEGEL-BOLD.OTF') format('opentype');
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Spiegel Bold Italic';
+	src: url('../fonts/SPIEGEL-BOLDITALIC.OTF') format('opentype');
+	font-weight: 600;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Spiegel Regular Italic';
+	src: url('../fonts/SPIEGEL-REGULARITALIC.OTF') format('opentype');
+	font-weight: 400;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Spiegel Semibold';
+	src: url('../fonts/SPIEGEL-SEMIBOLD.OTF') format('opentype');
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Spiegel Semibold Italic';
+	src: url('../fonts/SPIEGEL-SEMIBOLDITALIC.OTF') format('opentype');
+	font-weight: 600;
+	font-style: italic;
+	font-display: swap;
+}
+
+/* FONTS: GS3 */
 @font-face {
 	font-family: 'GS3 Beatrice';
 	src: url('../fonts/GS3 BEATRICE MEDIUM.TTF') format('truetype');
 	font-weight: 400;
 	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'GS3 Beatrice Medium';
+	src: url('../fonts/GS3 BEATRICE MEDIUM.TTF') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'GS3 Beatrice Bold';
+	src: url('../fonts/GS3 BEATRICE BOLD.TTF') format('truetype');
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'GS3 Beatrice Bold Italic';
+	src: url('../fonts/GS3 BEATRICE BOLDITALIC.TTF') format('truetype');
+	font-weight: 600;
+	font-style: italic;
 	font-display: swap;
 }
 
