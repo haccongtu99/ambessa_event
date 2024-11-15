@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="74.125" height="19.44" viewBox="0 0 74.125 19.44">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #96dbff;
+      }
+
+      .cls-1, .cls-2 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #cdfafa;
+        stroke-width: 1px;
+      }
+    </style>
+  </defs>
+  <path class="cls-1" d="M228.738,2319.29H210.293l10.25-18.43h18.446Z" transform="translate(-210.281 -2300.34)"/>
+  <path id="Shape_859_copy" data-name="Shape 859 copy" class="cls-1" d="M251.32,2319.29H232.875l10.251-18.43h18.445Z" transform="translate(-210.281 -2300.34)"/>
+  <path id="Shape_859_copy_2" data-name="Shape 859 copy 2" class="cls-2" d="M273.645,2319.29H255.2l10.251-18.43H283.9Z" transform="translate(-210.281 -2300.34)"/>
+</svg>

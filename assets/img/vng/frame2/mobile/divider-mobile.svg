@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="349" height="12.81" viewBox="0 0 349 12.81">
+  <defs>
+    <style>
+      .cls-1 {
+        filter: url(#filter);
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #c89b3c;
+        stroke-width: 1px;
+        fill-rule: evenodd;
+      }
+    </style>
+    <filter id="filter" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#eb2020"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="DIVIDER" class="cls-1">
+    <path class="cls-2" d="M20,2012.88H182.107m186.891,0H206.89" transform="translate(-20 -2006.47)"/>
+    <path id="Shape_857_copy_3" data-name="Shape 857 copy 3" class="cls-2" d="M200.172,2012.88l-5.673-5.71-5.672,5.71,5.672,5.7Z" transform="translate(-20 -2006.47)"/>
+    <path id="Shape_857_copy_2" data-name="Shape 857 copy 2" class="cls-2" d="M203.237,2016.52l3.619-3.64-3.619-3.65" transform="translate(-20 -2006.47)"/>
+    <path id="Shape_857_copy" data-name="Shape 857 copy" class="cls-2" d="M185.761,2009.23l-3.619,3.65,3.619,3.64" transform="translate(-20 -2006.47)"/>
+  </g>
+</svg>
