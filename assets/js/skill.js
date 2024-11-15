@@ -61,7 +61,7 @@ $(document).ready(function () {
 		activeImage.attr('src', activeSrc);
 		activeImage.attr('data-selected', 'true');
 	}
-
+	
 	// Set default content to "Passive" on page load
 	updateSkillContent('Passive');
 	updateSkillImage('Passive');
