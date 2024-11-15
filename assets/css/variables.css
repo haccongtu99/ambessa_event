@@ -82,6 +82,9 @@
 
   --color-metal-gold: #ffe0bb;
   --color-metal-gold-rgb: 255, 224, 187;
+
+  --color-red-base: #b00000;
+  --color-red-base-rgb: 176, 0, 0;
 }
 
 /*--------------------------------------------------------------

@@ -1,15 +1,12 @@
 export class Api {
   // Expired in 24 hours --> Need get new key for testing
-  API_KEY = 'RGAPI-6c3d4de8-299f-4096-b33f-299de933b995';
+  API_KEY = 'RGAPI-f66b6cab-807b-4818-b22c-15c39889dedd';
   async get(url) {
     const newUrl = url + `?api_key=${this.API_KEY}`;
     try {
       return fetch(newUrl, {
         mode: 'cors',
-        headers: {
-          // 'Access-Control-Allow-Origin': '*',
-          // 'X-Riot-Token': this.API_KEY,
-        },
+        header: {},
       })
         .then(res => res.json())
         .then(data => {

@@ -1,7 +1,6 @@
-/* #hero-animated {
-  background-image: url(../img/vng/frame1/background.png);
-  background-size: 100% 100%;
-  background-size: 100% 100%;
-  background-position: top;
-  background-repeat: no-repeat;
-} */
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}

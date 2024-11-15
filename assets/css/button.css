@@ -1,12 +1,12 @@
-.btn-download {
-  background-color: red;
+.btn-download, .btn-download-mobile {
+  width: 156px;
+  font-family: 'GS3 Beatrice Medium';
+  background-color: var(--color-red-base);
   font-weight: bold;
   color: #fff !important;
   padding: 4px 10px;
-  border-radius: 5px;
-  text-decoration: none;
-}
-
-.btn-download:hover, a.btn-download:hover {
-  text-decoration: none !important;
+  height: 36px;
+  border-radius: 6px;
+  padding: 5px;
+  text-align: center;
 }

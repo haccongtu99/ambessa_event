@@ -1,3 +1,67 @@
-#ranked-table table {
-  background-color: #000;
+table > thead > tr > th:first-child {
+  min-width: 50px
 }
+
+table > thead > tr > th {
+  min-width: 50px;
+  font-size: 25px;
+  line-height: 47px;
+  text-transform: uppercase;
+  font-family: 'Spiegel Bold';
+  color: var(--color-white);
+  /* text-wrap: nowrap;
+  white-space: nowrap;
+  text-overflow: ellipsis; */
+}
+table > thead > tr > th:first-child {
+  text-align: center;
+}
+table > tbody > tr {
+  position: relative;
+}
+
+table > tbody > tr::after {
+  content: '';
+  display: block;
+  height: 2px;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: 3;
+  background-color: var(--color-orange);
+}
+
+table > tbody > tr > td {
+  position: relative;
+  font-size: 30px;
+  font-family: 'Spiegel Bold';
+  text-transform: uppercase;
+  color: var(--color-white);
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  /* Required for text-overflow to do anything */
+  /* text-wrap: nowrap;
+  white-space: nowrap;
+  text-overflow: ellipsis; */
+}
+table > tbody > tr > td:first-child {
+  min-width: 50px;
+  text-align: center;
+}
+table > tbody > tr:nth-child(-n+3) > td {
+  color: var(--color-orange);
+  font-family: 'Spiegel Bold';
+}
+
+@media (max-width: 938px) {
+  table > thead > tr > th {
+    font-size: 14px;
+  }
+  table > tbody > tr > td {
+    font-size: 14px;
+  }
+}
+
+
