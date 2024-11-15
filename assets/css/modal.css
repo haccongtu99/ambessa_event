@@ -1,3 +1,4 @@
+/* Button styles */
 .btn-open,
 .btn-close {
 	padding: 10px 20px;
@@ -24,39 +25,33 @@
 	height: 100%;
 	justify-content: center;
 	align-items: center;
-	display: flex;
 	z-index: 1000;
 	background-color: rgba(0, 0, 0, 0.7);
 }
 
 .modal-content {
 	width: 100%;
-	max-width: 400px;
+	max-width: 370px;
 	padding: 0;
 	background-color: transparent;
 	border: none;
 	border-radius: 10px;
 	overflow: hidden;
 	position: relative;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.modal-background {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
 }
 
 /* Card styles */
-.card {
-	width: 100%;
-	height: 638px;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	background-size: cover;
-	background-position: center;
-	position: relative;
-	color: white;
-	border-radius: 10px;
-	overflow: hidden;
-	background: url('../img/vng/frame3/modal/Board.png') center center no-repeat;
-}
-
 .card-overlay {
 	width: 100%;
 	height: 100%;
@@ -64,12 +59,6 @@
 	flex-direction: column;
 	align-items: center;
 	position: relative;
-	padding: 92px 20px 0;
-}
-
-.card-title {
-	font-size: 24px;
-	margin-bottom: 10px;
 }
 
 .card-button {
@@ -77,43 +66,19 @@
 	border: none;
 	padding: 0;
 	cursor: pointer;
-	position: absolute;
-	bottom: 40px;
-}
-
-.x-button {
-	background: none;
-	border: none;
-	padding: 0;
-	cursor: pointer;
-	position: absolute;
-	right: 25px;
-	top: 45px;
-}
-
-.arcane-title {
-	position: absolute;
-	left: 50%;
-	transform: translateX(-50%);
-	top: 45px;
+	margin: 20px 0;
 }
 
 .card-button img {
 	width: 150px;
 	height: auto;
-	border-radius: 10px; /* Optional rounded corners */
+	border-radius: 10px;
 	transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card-button img:hover {
 	transform: scale(1.05); /* Slight zoom effect on hover */
 	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Add shadow effect */
-}
-
-.card-description {
-	font-size: 16px;
-	text-align: center;
-	margin-bottom: 20px;
 }
 
 .modal-info {
@@ -127,15 +92,17 @@
 	color: #cffafa;
 }
 
-.modal-info > img {
+.modal-info > .jinx-avatar {
 	width: 198px;
 	height: 198px;
 }
 
 .modal-info > h1 {
-	font-family: var(--font-beaufort);
+	font-family: var(--font-beaufort-bold);
 	color: var(--color-white);
 	font-size: 24px;
+	margin-top: 20px;
+	text-transform: capitalize;
 }
 
 .modal-champ-info {
@@ -147,7 +114,8 @@
 	height: 90px;
 }
 
-.modal-role img {
+.modal-role img,
+.modal-level img {
 	width: 36px;
 	height: 36px;
 }
@@ -158,4 +126,20 @@
 	color: var(--color-white);
 	font-size: 14px;
 	width: 100%;
+	margin-top: 15px;
+}
+
+.x-button {
+	background: none;
+	border: none;
+	padding: 0;
+	cursor: pointer;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+}
+
+.arcane-img {
+	width: auto;
+	height: auto;
 }
