@@ -1,83 +1,74 @@
 .frame1 {
-  height: 100vh;
-  min-height: 100vh;
-  position: relative;
+	height: 100vh;
+	min-height: 100vh;
+	position: relative;
 }
 
 #hero-animated.frame1 {
-  background-size: 100% 100%;
-  background-position: top;
-  background-repeat: no-repeat;
-  background-image: url(../img/vng/frame1/background.png);
+	background-size: 100% 100%;
+	background-position: top;
+	background-repeat: no-repeat;
+	background-image: url(../img/vng/frame1/background.png);
 }
 
-#hero-animated.frame2 {
-  background-size: 100% 100%;
-  background-position: top;
-  background-repeat: no-repeat;
-  background-image: url(../img/vng/frame2/Overlay.png);
+.frame2,
+.frame3 {
+	height: 100vh;
 }
-
-#hero-animated.frame3 {
-  background-size: 100% 100%;
-  background-position: top;
-  background-repeat: no-repeat;
-  background-image: url(../img/vng/frame3/Overlay.png);
-}
-
-.frame2, .frame3 {
-  height: 100vh;
-} 
 
 .frame1 .hero-animated__content {
-  position: relative;
-  height: 100%;
-  width: 50%;
+	position: relative;
+	height: 100%;
+	width: 50%;
 }
 
 .frame1 .hero-animated__content-char {
-  position: absolute;
-  top: calc(50% + 100px);
-  left: calc(50% + 200px);
-  transform: translate(-50%, -50%);
-  z-index: 0;
-  object-fit: cover;
-  height: 100%;
+	position: absolute;
+	top: calc(50% + 100px);
+	left: calc(50% + 200px);
+	transform: translate(-50%, -50%);
+	z-index: 0;
+	object-fit: cover;
+	height: 100%;
 }
 
 .frame1 .hero-animated__content-crack {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  z-index: 2;
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	z-index: 2;
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
 }
 
 .frame1 .ranked__relative {
-  position: relative;
+	position: relative;
 }
 
 .frame1 .ranked__wrapper {
-  position: relative;
+	position: relative;
 }
 
 .frame1 .ranked__wrapper > .ranked__background {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: -120px;
-  left: 0;
-  z-index: 0;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: -120px;
+	left: 0;
+	z-index: 0;
 }
 
 .ranked > .ranked-top-3 > .ranked-top-3__item {
-  min-height: 100px;
+	min-height: 100px;
 }
 
 .ranked > .ranked-top-3 > .ranked-top-3__item > .ranked-top-3__item-avatar {
-  border-radius: 50%;
-  width: 110px;
-  width: 110px;
+	border-radius: 50%;
+	width: 110px;
+	width: 110px;
+}
+
+.wrapper {
+	overflow: hidden;
 }
