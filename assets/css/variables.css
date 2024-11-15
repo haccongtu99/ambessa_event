@@ -3,6 +3,10 @@
   --header-height: 100px;
 
   /* Fonts */
+  --font-beaufort: 'Beaufort For LOL', sans-serif;
+  --font-spiegel: 'Spiegel', sans-serif;
+  --font-gs3: 'GS3', sans-serif;
+
   --font-default: 'Source Sans Pro', sans-serif;
   --font-primary: 'Source Sans Pro', sans-serif;
   --font-secondary: 'Source Sans Pro', sans-serif;
