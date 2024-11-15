@@ -3,32 +3,32 @@ $(document).ready(function () {
 	const skills = {
 		Passive: {
 			title: 'Passive - Your Passive Skill Title',
-			description: `<span class="color-yellow text-capitalize">Nội tại:</span> Ambessa nhận hiệu ứng Xuyên Giáp và các Kỹ Năng sẽ hồi lại máu cho vị tướng này.`,
-			activation: `<span class="color-yellow text-capitalize">Kích hoạt: </span> Ambessa receives passive effects that grant armor penetration and restore health for each skill use.`,
+			description: `<span>Nội tại:</span> Ambessa nhận hiệu ứng Xuyên Giáp và các Kỹ Năng sẽ hồi lại máu cho vị tướng này.`,
+			activation: `<span>Kích hoạt: </span> Ambessa receives passive effects that grant armor penetration and restore health for each skill use.`,
 			videoSrc: './assets/video/passive.mp4',
 		},
 		Q: {
 			title: 'Q - Skill Q Title',
-			description: `<span class="color-yellow text-capitalize">Nội tại:</span> Q skill description goes here.`,
-			activation: `<span class="color-yellow text-capitalize">Kích hoạt: </span> Activation effect for skill Q goes here.`,
+			description: `<span>Nội tại:</span> Q skill description goes here.`,
+			activation: `<span>Kích hoạt: </span> Activation effect for skill Q goes here.`,
 			videoSrc: './assets/video/Q.mp4',
 		},
 		W: {
 			title: 'W - Skill W Title',
-			description: `<span class="color-yellow text-capitalize">Nội tại:</span> W skill description goes here.`,
-			activation: `<span class="color-yellow text-capitalize">Kích hoạt: </span> Activation effect for skill W goes here.`,
+			description: `<span>Nội tại:</span> W skill description goes here.`,
+			activation: `<span>Kích hoạt: </span> Activation effect for skill W goes here.`,
 			videoSrc: './assets/video/W.mp4',
 		},
 		E: {
 			title: 'E - Skill E Title',
-			description: `<span class="color-yellow text-capitalize">Nội tại:</span> E skill description goes here.`,
-			activation: `<span class="color-yellow text-capitalize">Kích hoạt: </span> Activation effect for skill E goes here.`,
+			description: `<span>Nội tại:</span> E skill description goes here.`,
+			activation: `<span>Kích hoạt: </span> Activation effect for skill E goes here.`,
 			videoSrc: './assets/video/E.mp4',
 		},
 		R: {
 			title: 'R - Hành Quyết Công Khai',
-			description: `<span class="color-yellow text-capitalize">Nội tại:</span> Ambessa nhận hiệu ứng Xuyên Giáp và các Kỹ Năng sẽ hồi lại máu cho vị tướng này.`,
-			activation: `<span class="color-yellow text-capitalize">Kích hoạt: </span> Ambessa trở nên không thể ngăn cản và dịch chuyển đến vị trí tướng địch xa nhất trên một đường thẳng. Bà áp chế mục tiêu, sau đó nện chúng xuống mặt đất để gây sát thương và Làm Choáng.`,
+			description: `<span>Nội tại:</span> Ambessa nhận hiệu ứng Xuyên Giáp và các Kỹ Năng sẽ hồi lại máu cho vị tướng này.`,
+			activation: `<span>Kích hoạt: </span> Ambessa trở nên không thể ngăn cản và dịch chuyển đến vị trí tướng địch xa nhất trên một đường thẳng. Bà áp chế mục tiêu, sau đó nện chúng xuống mặt đất để gây sát thương và Làm Choáng.`,
 			videoSrc: './assets/video/R.mp4',
 		},
 	};

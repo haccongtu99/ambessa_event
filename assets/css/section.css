@@ -68,3 +68,7 @@
 	width: 110px;
 	width: 110px;
 }
+
+.wrapper {
+	overflow: hidden;
+}

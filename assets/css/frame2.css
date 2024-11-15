@@ -1,6 +1,6 @@
 #hero-animated.frame2 {
-	background-size: 100% 100%;
-	background-position: top;
+	background-size: cover;
+	background-position: center;
 	background-repeat: no-repeat;
 	background-image: url(../img/vng/frame2/mobile/bg.png);
 }
@@ -16,12 +16,33 @@
 }
 
 .title_container > h1 {
-	margin-top: 7px;
+	margin-top: 8px;
+	/* font-size: 32px; */
+	letter-spacing: 2px;
+	line-height: 1;
+	text-transform: uppercase;
+	color: #f5f5f5;
+	font-weight: 800;
+	font-family: var(--font-spiegel);
+	text-align: center;
 }
 
 .title_container > h3 {
-	margin-top: 20px;
-	max-width: 350px;
+	margin: 20px 6px 0;
+	font-family: var(--font-beaufort-bold);
+	color: var(--color-metal-gold);
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 18px;
+}
+
+.title_container > h6 {
+	text-transform: uppercase;
+	font-size: 12px;
+	font-family: var(--font-spiegel);
+	color: var(--color-metal-gold);
+	text-align: center;
+	line-height: 19px;
 }
 
 .champion_container {
@@ -31,13 +52,29 @@
 }
 
 .champion_avatar {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	gap: 15px;
 	margin-top: 15px;
 	width: 100%;
+	max-width: 575px;
 }
 
 .champion_label {
-	max-width: 240px;
+	/* max-width: 210px; */
+	padding: 0 70px;
+	font-size: 1rem;
+	color: var(--color-metal-gold);
+	font-weight: bold;
+	font-family: var(--font-beaufort);
+	text-align: center;
+}
+
+.skill_container {
+	max-width: 569px;
 }
 
 .skill_img {
@@ -52,14 +89,31 @@
 }
 
 .skill_flex {
-	gap: 11px;
+	gap: 13px;
 	margin-top: 14px;
-	max-width: 350px;
+	padding: 0 24px;
 }
 
 .skill_content {
 	gap: 14px;
-	padding: 0 22px;
+	padding: 0 25px;
+}
+
+.skill_content > p {
+	font-size: 12px;
+	color: var(--color-white);
+	font-family: var(--font-spiegel);
+}
+
+.skill_content > h3 {
+	font-size: 14px;
+	color: #ffda8c;
+	font-family: var(--font-beaufort-bold);
+}
+
+.skill_content span {
+	color: var(--color-metal-gold);
+	font-family: var(--font-spiegel-bold);
 }
 
 .skill_title {
@@ -84,10 +138,19 @@
 	height: 100%;
 }
 
+.mobile-divider {
+	margin: 3px 0 6px;
+}
+
+.desktop-divider {
+	display: none;
+}
+
 @media only screen and (min-width: 1024px) {
 	#hero-animated.frame2 {
 		background-image: url(../img/vng/frame2/desktop/2-bg.png);
 	}
+
 	.title_container > h3 {
 		max-width: 100%;
 		font-size: 24px;
@@ -105,24 +168,19 @@
 	.champion_container {
 		flex-direction: row;
 		justify-content: space-between;
-		max-width: 1280px;
+		max-width: 1220px;
 		margin-top: 65px;
 		gap: 32px;
 	}
 
-	.skill_container {
-		max-width: 644px;
-		justify-content: start;
-	}
-
 	.champion_avatar {
 		margin-top: 0;
-		max-width: 567px;
+		max-width: 639px;
 		gap: 16px;
 	}
 
-	.champion_label {
-		max-width: 484px;
+	.champion_avatar > h6 {
+		padding: 0;
 	}
 
 	.skill_img {
@@ -139,7 +197,21 @@
 		width: 3px;
 	}
 
+	.skill_content {
+		gap: 14px;
+		padding: 0 30px;
+	}
+
 	.video-container {
 		margin-top: 0;
+	}
+
+	.mobile-divider {
+		display: none;
+	}
+
+	.desktop-divider {
+		display: block;
+		margin: 15px 0 8px;
 	}
 }

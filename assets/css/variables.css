@@ -2,14 +2,17 @@
 	/* Header */
 	--header-height: 100px;
 
-  /* Fonts */
-  --font-beaufort: 'Beaufort For LOL', sans-serif;
-  --font-spiegel: 'Spiegel', sans-serif;
-  --font-gs3: 'GS3', sans-serif;
+	/* Fonts */
+	--font-beaufort: 'Beaufort For LOL', sans-serif;
+	--font-beaufort-bold: 'Beaufort For LOL Bold', sans-serif;
+	--font-spiegel: 'Spiegel', sans-serif;
+	--font-spiegel-bold: 'Spiegel Bold', sans-serif;
+	--font-gs3: 'GS3', sans-serif;
+	--font-gs3-bold: 'GS3 Beatrice Bold', sans-serif;
 
-  --font-default: 'Source Sans Pro', sans-serif;
-  --font-primary: 'Source Sans Pro', sans-serif;
-  --font-secondary: 'Source Sans Pro', sans-serif;
+	--font-default: 'Source Sans Pro', sans-serif;
+	--font-primary: 'Source Sans Pro', sans-serif;
+	--font-secondary: 'Source Sans Pro', sans-serif;
 
 	/* Break points */
 	--bp-sm: 576px;

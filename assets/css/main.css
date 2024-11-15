@@ -97,7 +97,7 @@ body {
 }
 
 @font-face {
-	font-family: 'Beaufort For LOL Regular';
+	font-family: 'Beaufort For LOL';
 	src: url('../fonts/BEAUFORTFORLOL-REGULAR.OTF') format('opentype');
 	font-weight: 400;
 	font-style: normal;
@@ -114,7 +114,7 @@ body {
 
 /* FONTS: SPIEGEL */
 @font-face {
-	font-family: 'Spiegel Regular';
+	font-family: 'Spiegel';
 	src: url('../fonts/SPIEGEL-REGULAR.OTF') format('opentype');
 	font-weight: 400;
 	font-style: normal;
