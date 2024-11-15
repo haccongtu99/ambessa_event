@@ -163,7 +163,7 @@ body {
 
 /* FONTS: GS3 */
 @font-face {
-	font-family: 'GS3 Beatrice';
+	font-family: 'GS3 Beatrice Medium';
 	src: url('../fonts/GS3 BEATRICE MEDIUM.TTF') format('truetype');
 	font-weight: 400;
 	font-style: normal;
@@ -171,10 +171,10 @@ body {
 }
 
 @font-face {
-	font-family: 'GS3 Beatrice Medium';
-	src: url('../fonts/GS3 BEATRICE MEDIUM.TTF') format('truetype');
+	font-family: 'GS3 Beatrice Medium Italic';
+	src: url('../fonts/GS3 BEATRICE MEDIUMITALIC.TTF') format('truetype');
 	font-weight: 400;
-	font-style: normal;
+	font-style: italic;
 	font-display: swap;
 }
 
