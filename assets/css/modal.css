@@ -1,5 +1,5 @@
 /* Button styles */
-.btn-open,
+.btn-open-modal,
 .btn-close {
 	padding: 10px 20px;
 	border: none;
@@ -10,136 +10,247 @@
 	transition: background-color 0.3s;
 }
 
-.btn-open:hover,
+.btn-open-modal:hover,
 .btn-close:hover {
 	background-color: #0056b3;
 }
 
-/* Modal styles */
-.modal {
-	display: none; /* Hidden by default */
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	justify-content: center;
-	align-items: center;
-	z-index: 1000;
-	background-color: rgba(0, 0, 0, 0.7);
+@media (min-width: 390px) {
+	.modal-desktop {
+		display: none;
+		position: fixed;
+		top: 0;
+		left: 50%;
+		width: 100%;
+		height: 100%;
+		justify-content: center;
+		align-items: center;
+		z-index: 1000;
+		transform: translateX(-50%);
+		background-color: rgba(0, 0, 0, 0.7);
+	}
+
+	.modal-container {
+		width: 100%;
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 40px;
+	}
+
+	.modal-wrapper {
+		width: 100%;
+		max-width: 1160px;
+		position: relative;
+	}
+
+
+	.modal-header {
+		width: 100%;
+		height: 100px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.modal-title {
+		position: absolute;
+		top: 20px;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	
+	.modal-background {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: -1;
+	}
+	
+	.card-overlay {
+		/* padding: 100px; */
+		padding: 20px 100px;
+		max-width: 1160px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	.champion-info {
+		/* color: red; */
+		color: #cffafa;
+	}
+
+	.champion-name {
+		font-family: var(--font-beaufort-bold);
+		color: var(--color-white);
+		font-size: 24px;
+		text-transform: capitalize;
+	}
+
+	.champion-description {
+		font-family: var(--font-spiegel);
+		color: var(--color-white);
+		font-size: 14px;
+		width: 100%;
+		margin-top: 15px;
+	}
+
+	.champion-role,
+	.champion-level {
+		row-gap: 10px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.x-button {
+		background: none;
+		border: none;
+		padding: 0;
+		cursor: pointer;
+		position: absolute;
+		right: 10px;
+		top: 10px;
+	}
+
+	#image-button {
+		width: fit-content;
+		background-color: transparent;
+		border: none;
+	}
+
 }
 
-.modal-content {
-	width: 100%;
-	max-width: 370px;
-	padding: 0;
-	background-color: transparent;
-	border: none;
-	border-radius: 10px;
-	overflow: hidden;
-	position: relative;
-	background-size: 100%;
-	background-repeat: no-repeat;
-	background-position: center;
-}
+@media (max-width: 390px) {
+	.modal {
+		width: 370px;
+	}
 
-.modal-background {
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	top: 0;
-	left: 0;
-}
-
-/* Card styles */
-.card-overlay {
-	width: 100%;
-	height: 100%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	position: relative;
-}
-
-.card-button {
-	background: none;
-	border: none;
-	padding: 0;
-	cursor: pointer;
-	margin: 20px 0;
-}
-
-.card-button img {
-	width: 150px;
-	height: auto;
-	border-radius: 10px;
-	transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.card-button img:hover {
-	transform: scale(1.05); /* Slight zoom effect on hover */
-	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Add shadow effect */
-}
-
-.modal-info {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-	max-width: 200px;
-	gap: 9px;
-	font-family: var(--font-spiegel);
-	color: #cffafa;
-}
-
-.modal-info > .jinx-avatar {
-	width: 198px;
-	height: 198px;
-}
-
-.modal-info > h1 {
-	font-family: var(--font-beaufort-bold);
-	color: var(--color-white);
-	font-size: 24px;
-	margin-top: 20px;
-	text-transform: capitalize;
-}
-
-.modal-champ-info {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	width: 100%;
-	padding: 3px 10px;
-	height: 90px;
-}
-
-.modal-role img,
-.modal-level img {
-	width: 36px;
-	height: 36px;
-}
-
-.modal-description {
-	font-family: var(--font-spiegel);
-	padding: 0 50px;
-	color: var(--color-white);
-	font-size: 14px;
-	width: 100%;
-	margin-top: 15px;
-}
-
-.x-button {
-	background: none;
-	border: none;
-	padding: 0;
-	cursor: pointer;
-	position: absolute;
-	right: 10px;
-	top: 10px;
-}
-
-.arcane-img {
-	width: auto;
-	height: auto;
+	.modal {
+		display: none; /* Hidden by default */
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		justify-content: center;
+		align-items: center;
+		z-index: 1000;
+		background-color: rgba(0, 0, 0, 0.7);
+	}
+	
+	.modal-content {
+		width: 100%;
+		max-width: 370px;
+		padding: 0;
+		background-color: transparent;
+		border: none;
+		border-radius: 10px;
+		overflow: hidden;
+		position: relative;
+		background-size: 100%;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	
+	.modal-background {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	
+	/* Card styles */
+	.card-overlay {
+		width: 100%;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		position: relative;
+	}
+	
+	.card-button {
+		background: none;
+		border: none;
+		padding: 0;
+		cursor: pointer;
+		margin: 20px 0;
+	}
+	
+	.card-button img {
+		width: 150px;
+		height: auto;
+		border-radius: 10px;
+		transition: transform 0.3s ease, box-shadow 0.3s ease;
+	}
+	
+	.card-button img:hover {
+		transform: scale(1.05); /* Slight zoom effect on hover */
+		box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Add shadow effect */
+	}
+	
+	.modal-info {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		max-width: 200px;
+		gap: 9px;
+		font-family: var(--font-spiegel);
+		/* color: #cffafa; */
+	}
+	
+	.modal-info > h1 {
+		font-family: var(--font-beaufort-bold);
+		color: var(--color-white);
+		font-size: 24px;
+		margin-top: 20px;
+		text-transform: capitalize;
+	}
+	
+	.modal-champion-info {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+		padding: 3px 10px;
+		height: 90px;
+		color: #cffafa;
+	}
+	
+	.modal-role img,
+	.modal-level img {
+		width: 36px;
+		height: 36px;
+	}
+	
+	.modal-description {
+		font-family: var(--font-spiegel);
+		padding: 0 50px;
+		color: var(--color-white);
+		font-size: 14px;
+		width: 100%;
+		margin-top: 15px;
+	}
+	
+	.x-button {
+		background: none;
+		border: none;
+		padding: 0;
+		cursor: pointer;
+		position: absolute;
+		right: 10px;
+		top: 10px;
+	}
+	
+	.arcane-img {
+		width: auto;
+		height: auto;
+	}
 }

@@ -130,7 +130,7 @@
               </div>
             </div>
             <div class="table-container d-flex justify-content-center align-items-center">
-              <table id="frame1_ranked_table" class="w-100">
+              <table id="frame1_ranked_table">
                 <thead>
                   <tr>
                     <th>STT</th>
@@ -194,7 +194,7 @@
             </div>
           </div>
         </div>
-        <div style="flex: 0 0 160px;" class="h-100"></div>
+        <div style="flex: 0 0 160px;" class="empty-div"></div>
       </div>
     </section>
 
@@ -303,19 +303,18 @@
 
     <!-- Modal -->
     <section id="modal" class="modal">
-      <div class="position-relative" style="width: 370px;">
+      <div class="position-relative">
         <img src="./assets/img/vng/frame3/modal/Board.png" alt="board" class="modal-background">
         <div class="w-100 h-100 card-overlay p-2">
           <button id="x-button" class="x-button close">
             <img src="./assets/img/vng/frame3/modal/X.svg" alt="X Button" />
           </button>
-          <img src="./assets/img/vng/frame3/modal/arcane.png" alt="arcane button"s/>
+          <img src="./assets/img/vng/frame3/modal/arcane.png" alt="arcane button" />
           <div class="card-overlay">
             <div class="modal-info">
               <h1>JINX</h1>
               <img src="./assets/img/vng/frame3/modal/jinx-ava.svg" alt="jinx-avatar">
-
-              <div class="d-flex justify-content-between modal-champ-info">
+              <div class="d-flex justify-content-between modal-champion-info">
                 <div class="modal-role d-flex align-items-center flex-column h-100 justify-content-between">
                   <h6>Vai trò</h6>
                   <img src="./assets/img/vng/frame3/modal/jinx-skill.svg" alt="jinx-level">
@@ -329,14 +328,53 @@
                 </div>
               </div>
             </div>
-            <p class="modal-description">Jayce, nhà phát minh tài năng, dùng cây búa Hextech để bảo vệ P Jayce, nhà phát minh tài năng, dùng cây búa Hextech để bảo vệ P Jayce,
-               nhà phát minh tài năng, dùng cây búa Hextech để bảo vệ P
-               hà phát minh tài năng, dùng cây búa Hextech để bảo vệ P
-            </p>
-
+            <p class="modal-description"></p>
             <button id="image-button" class="card-button">
               <img src="./assets/img/vng/frame3/modal/button.png" alt="Image Button" />
             </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal Desktop -->
+    <section id="modal-desktop" class="modal-desktop">
+      <div class="modal-container">
+        <div class="modal-wrapper">
+          <img src="./assets/img/vng/frame3/modal/Board.png" alt="board" class="modal-background">
+          <div class="modal-header">
+            <button id="x-button" class="x-button close">
+              <img src="./assets/img/vng/frame3/modal/X.svg" alt="X Button" />
+            </button>
+            <img class="modal-title" src="./assets/img/vng/frame3/modal/arcane.png" alt="arcane button" />
+          </div>
+          <div class="card-overlay">
+            <div class="d-flex justify-content-between w-100 h-100">
+              <div class="champion-info flex-1">
+                <h1 class="champion-name"></h1>
+                <p class="champion-description"></p>
+                <div style="column-gap: 20px;" class="mt-4 w-50 d-flex align-items-start justify-content-between">
+                  <div class="champion-role">
+                    <h6>Vai trò</h6>
+                    <img src="./assets/img/vng/frame3/modal/jinx-skill.svg" alt="jinx-level">
+                    <p>Xạ thủ</p>
+                  </div>
+                  <div class="champion-level">
+                    <h6>Độ khó</h6>
+                    <img src="./assets/img/vng/frame3/modal/level-2.svg" alt="jinx-level">
+                    <p>Trung bình</p>
+                  </div>
+                </div>
+              </div>
+              <div class="champion-avatar">
+                <img src="./assets/img/vng/frame3/modal/jinx-ava.svg" alt="jinx-avatar">
+              </div>
+            </div>
+            <div class="w-100 mt-4 d-flex align-items-center justify-content-center">
+              <button id="image-button" class="w-fit">
+                <img src="./assets/img/vng/frame3/modal/button.png" alt="Image Button" />
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -417,9 +455,9 @@
   integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
   crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
+<script type="module" src="assets/js/useDevice.js"></script>
 <script type="module" src="assets/js/main.js"></script>
 <script type="module" src="assets/js/skill.js"></script>
 <script type="module" src="assets/js/clickScroll.js"></script>
 <script type="module" src="assets/js/modal.js"></script>
-
 </html>

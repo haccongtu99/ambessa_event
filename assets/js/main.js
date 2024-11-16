@@ -1,4 +1,6 @@
 'use strict';
+import { isMobileDevice } from './useDevice.js';
+
 let isMobileFlag = false;
 
 // temporary
@@ -6,42 +8,20 @@ function isMobileScreen() {
   return window.innerWidth <= 938;
 }
 
-// temporary
-function isMobileDevice() {
-  return /Android|iPhone/i.test(navigator.userAgent);
-}
 
-// const raw_data = [
-//   {
-//     stt: '1',
-//     ingame_id: '1234567890',
-//     diem_thong_thao: '1000',
-//   },
-//   {
-//     stt: '2',
-//     ingame_id: '1234567890',
-//     diem_thong_thao: '1000',
-//   },
-//   {
-//     stt: '3',
-//     ingame_id: '1234567890',
-//     diem_thong_thao: '1000',
-//   },
-//   {
-//     stt: '4',
-//     ingame_id: '1234567890',
-//     diem_thong_thao: '1000',
-//   },
-//   {
-//     stt: '5',
-//     ingame_id: '1234567890',
-//     diem_thong_thao: '1000',
-//   },
-// ];
-
-function handleRankedTable() {
-  console.log('>>> handleRankedTable..');
-}
+// function isMobileDevice() {
+//   if (
+//     (navigator.userAgent.match(/Android/i))
+//     || navigator.userAgent.match(/webOS/i)
+//     || navigator.userAgent.match(/iPhone/i)
+//     || navigator.userAgent.match(/iPod/i)
+//     || navigator.userAgent.match(/BlackBerry/i)
+//     || navigator.userAgent.match(/Windows Phone/i)
+//   ) {
+//     return true;
+//   }
+//   return false;
+// };
 
 function handleMode() {
   isMobileFlag = isMobileScreen() || isMobileDevice();
@@ -74,5 +54,4 @@ $(document).ready(() => {
   handleDrawer();
   handleMode();
   window.addEventListener('resize', handleMode);
-  handleRankedTable();
 });

@@ -1,6 +1,7 @@
-.frame2,
-.frame3 {
-	height: 100vh;
+@media only screen and (min-width: 1024px) {
+	.frame1, .frame2, .frame3 {
+		height: 100vh;
+	}
 }
 .wrapper {
 	overflow: hidden;

@@ -132,10 +132,11 @@
 	bottom: 0;
 	z-index: 7;
 	background: url('../img/vng/frame3/mobile/mel.png') center center no-repeat;
+	pointer-events: none;
 }
 #mel-3[data-active='true'],
 #mel-3:hover {
-	background-image: url('../img/vng/frame3/mobile/mel_hover.png');
+	background-image: url('../img/vng/frame3/mobile/mel.png');
 }
 
 #ambessa-3 {
@@ -280,9 +281,9 @@
 	}
 
 	#mel-3 {
-		width: 80px;
-		height: 248px;
-		left: 250px;
+		width: 227px;
+		height: 704px;
+		left: 820px;
 		bottom: 0;
 		z-index: 7;
 		background: url('../img/vng/frame3/desktop/mel.png') center center no-repeat;
@@ -290,8 +291,8 @@
 
 	#mel-3[data-active='true'],
 	#mel-3:hover {
-		height: 248px;
-		background-image: url('../img/vng/frame3/desktop/mel_hover.png');
+		/* height: 248px; */
+		background-image: url('../img/vng/frame3/desktop/mel.png');
 	}
 
 	#ambessa-3 {
