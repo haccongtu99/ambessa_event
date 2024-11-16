@@ -1,4 +1,4 @@
-#hero-animated.frame2 {
+#section_2.frame2 {
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -147,7 +147,7 @@
 }
 
 @media only screen and (min-width: 1024px) {
-	#hero-animated.frame2 {
+	#section_2.frame2 {
 		background-image: url(../img/vng/frame2/desktop/2-bg.png);
 	}
 

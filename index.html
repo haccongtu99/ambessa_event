@@ -31,60 +31,69 @@
     <header id="header" class="header fixed-top" data-scrollto-offset="0">
       <div class="d-flex align-items-center relative header-container">
         <a href="." class="logo d-flex align-items-center scrollto me-lg-0">
-          <img src="assets/img/vng/Logo_18_plus.png" alt="18 Plus">
+          <img class="img-icon" src="assets/img/vng/Logo_18_plus.png" alt="18 Plus">
         </a>
         <a href="." class="logo d-flex align-items-center scrollto me-lg-0">
-          <img src="assets/img/vng/Logo_Riot.png" alt="Riot Games">
+          <img class="img-icon" src="assets/img/vng/Logo_Riot.png" alt="Riot Games">
         </a>
-        <nav id="navbar" class="navbar flex-grow-1">
-          <ul>
-            <li><a href="#">Thách thức chiến lang</a></li>
-            <li><a href="#">Tướng mới Ambessa</a></li>
-            <li><a href="#">Arcane 2</a></li>
+        <a href="." class="logo d-flex align-items-center scrollto me-lg-0">
+          <img class="img-icon" src="assets/img/vng/logo_LOL.png" alt="Logo League of Legends">
+        </a>
+        <div id="navbar" class="navbar-collapse h-100 flex-grow-1">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link click-scroll" href="#section_1">Thách thức chiến lang</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link click-scroll" href="#section_2">Tướng mới Ambessa</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link click-scroll" href="#section_3">Arcane 2</a>
+            </li>
           </ul>
         </nav>
-        <a href="." class="btn-download">Tải game ngay!</a>
-        <div class="btn-menu-mobile">
-          <i class="btn-menu-mobile-icon bi bi-list text-white"></i>
-        </div>
-        <div id="drawer" class="drawer__container">
-          <div style="height: 100px; padding: 43px 23px 0px 28px" class="d-flex justify-content-between align-items-center">
-            <div class="drawer-logo" style="width: 60px; height: 60px;"></div>
-            <div class="btn-menu-mobile">
-              <i class="btn-close-drawer text-white bi bi-x-lg"></i>
-            </div>
+      </div>
+      <a href="." class="btn-download">Tải game ngay!</a>
+      <div class="btn-menu-list">
+        <i class="btn-menu-list-icon bi bi-list text-white"></i>
+      </div>
+      <div id="drawer" class=" drawer__container">
+        <div style="height: 100px; padding: 43px 23px 14px 28px" class="d-flex justify-content-between align-items-center">
+          <img src="assets/img/vng/logo_LOL.png" alt="Logo League of Legends">
+          <div class="btn-close-drawer">
+            <i class="text-white bi bi-x-lg"></i>
           </div>
-          <div style="padding-left: 34px; row-gap: 2.25rem;" class="row">
-            <a href="#" class="col-12">
-              <p class="drawer-title">Thách thức chiến lang</p>
-            </a>
-            <a href="#" class="col-12">
-              <p class="drawer-title">Tướng mới Ambessa</p>
-            </a>
-            <a href="#" class="col-12">
-              <p class="drawer-title">Arcane 2</p>
-            </a>
-          </div>
-          <a href="." class="btn-download-mobile">Tải game ngay!</a>
         </div>
+        <div style="padding-left: 34px; row-gap: 2.25rem;" class="row">
+          <a href="#section_1" class="col-12">
+            <p class="drawer-title">Thách thức chiến lang</p>
+          </a>
+          <a href="#section_2" class="col-12">
+            <p class="drawer-title">Tướng mới Ambessa</p>
+          </a>
+          <a href="#section_3" class="col-12">
+            <p class="drawer-title">Arcane 2</p>
+          </a>
+        </div>
+        <a href="." class="btn-download-mobile">Tải game ngay!</a>
       </div>
     </header>
 
     <!-- ------------------- FRAME 1 ------------------- -->
-    <section id="hero-animated" class="frame1">
+    <section id="section_1" class="frame1">
       <div class="frame1_char w-100 h-100"></div>
       <div class="frame1_content w-100 h-100">
-        <div class="frame1_content-overview justify-content-center align-items-center">
+        <div class="frame1_overview justify-content-center align-items-center">
           <div class="d-flex flex-column justify-content-center align-items-center">
-            <img class="frame1_title" loading="lazy" />
+            <div class="frame1_title" ></div> 
             <p class="title">LÀM CHỦ AMBESSA, CHINH PHỤC MỌI CHIẾN TRẬN</p>
-            <a href="#">
-              <img class="frame1_cta" loading="lazy" class="CTA" />
-            </a>
+            <div class="frame1_cta">
+              <a href="#"></a>
+            </div>
           </div>
         </div>
-        <div class="frame1_content-ranked">
-          <div class="test2">
+        <div class="frame1_ranked_wrapper">
+          <div class="frame_ranked_content">
             <div style="margin-bottom: 1rem;" class="d-flex justify-content-center">
               <div class="row gy-2">
                 <div class="d-flex justify-content-center">
@@ -196,7 +205,7 @@
     </section>
 
     <!-- ------------------- FRAME 2 ------------------- -->
-    <section id="hero-animated" class="frame2">
+    <section id="section_2" class="frame2">
       <div class="section_container">
         <div class="title_container color-white text-center">
           <h6>
@@ -274,7 +283,7 @@
       </div>
     </section>
 
-    <section id="hero-animated" class="frame3">
+    <section id="section_3" class="frame3">
       <div class="position-relative w-100 h-100">
         <div class="posistion-absolute top-0 start-0">
           <img src="./assets/img/vng/frame3/mobile/border-top.png" alt="border-top">
@@ -366,9 +375,18 @@
   
    <!-- FOOTER -->
   <footer id="footer" class="footer">
-    <div class="w-100 d-flex flex-column justify-content-center  align-items-center text-center">
+    <div class="w-100 d-flex flex-column justify-content-center align-items-center text-center">
+      <div style="margin-bottom: 20px; column-gap: 20px;" class="d-flex justify-content-center align-items-center">
+        <!-- // Need update -->
+        <a href="#" target="_blank">
+          <img src="assets/img/socials/Discord.png" alt="Discord Logo">
+        </a>
+        <a href="#" target="_blank">
+          <img src="assets/img/socials/FB_2.png" alt="Facebook Logo">
+        </a>
+      </div>
       <div style="margin-bottom: 20px;" class="col-12 d-flex justify-content-center align-items-center">
-        <img src="assets/img/vng/Logo_Riot_VNG.png" alt="">
+        <img src="assets/img/vng/Logo_Riot_VNG.png" alt="Riot Logo">
       </div>
       <div>
         <p class="footer-info">
@@ -378,7 +396,7 @@
           Quyết định phê duyệt nội dung kịch bản trò chơi điện tử G1 trên mạng số: 15/QĐ-BTTTT do Bộ Thông tin và Truyền thông cấp ngày 08/01/2021.
         </p>
       </div>
-      <div class="row">
+      <div class="row w-100">
         <div class="col-sm-4 col-12">
           <a class="footer-link" href="https://www.riotgames.com/vi/privacy-notice" target="_blank">CHÍNH SÁCH BẢO MẬT</a>
         </div>
@@ -394,7 +412,7 @@
   </div>
   <div class="sticky-social-icons">
     <div class="social-containter d-flex flex-column justify-content-between align-items-center">
-      <!-- // Need replace -->
+      <!-- // Need update -->
       <div class="w-100 flex-grow-1 social-icon">
         <a href="https://www.facebook.com/DTCLVN" target="_blank">
           <div class="position-relative h-100">
@@ -403,7 +421,7 @@
           </div>
         </a>
       </div>
-      <!-- // Need replace -->
+      <!-- // Need update -->
       <div class="w-100 flex-grow-1 social-icon">
         <a href="https://www.youtube.com/@DTCLVN" target="_blank">
           <div class="position-relative h-100 hover-light">
@@ -412,7 +430,7 @@
           </div>
         </a>
       </div>
-      <!-- // Need replace -->
+      <!-- // Need update -->
       <div class="w-100 flex-grow-1 social-icon hover-light">
         <a href="https://www.instagram.com/DTCLVN" target="_blank">
           <div class="position-relative h-100">
@@ -431,6 +449,7 @@
 <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
 <script type="module" src="assets/js/main.js"></script>
 <script type="module" src="assets/js/skill.js"></script>
+<script type="module" src="assets/js/clickScroll.js"></script>
 <script type="module" src="assets/js/modal.js"></script>
 
 </html>

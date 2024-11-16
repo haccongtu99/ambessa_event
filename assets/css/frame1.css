@@ -91,37 +91,26 @@
   background-repeat: no-repeat;
 }
 
-#frame1_ranked_table {
-  padding: 0 60px;
-}
-
-.frame1_cta {
-  background-image: url(../img/vng/frame1/desktop/desktop_cta.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-@media (max-width: 1024px) {
-  .header > div > nav {
-    display: none;
-  }
-}
-
-@media (min-width: 1024px) {
+@media only screen and (min-width: 1024px) {
   .frame1 {
     width: 100vw;
     height: 100vh;
     min-height: 938px;
     position: relative;
   }
-  #hero-animated.frame1 {
+
+  /* #drawer {
+    display: none;
+  } */
+
+  #section_1 {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-image: url(../img/vng/frame1/desktop/desktop_background.png);
   }
-  #hero-animated.frame1 .frame1_char {
+
+  #section_1 .frame1_char {
     width: 100%;
     background-image: url(../img/vng/frame1/desktop/desktop_char_ambessa.png);
     background-size: cover;
@@ -130,6 +119,7 @@
     position: absolute;
     z-index: 3;
   }
+
   .frame1_content {
     width: 100%;
     display: flex;
@@ -141,14 +131,15 @@
     top: 0;
     left: 0;
   }
-  .frame1_content > .frame1_content-overview {
+
+  .frame1_content > .frame1_overview {
     height: 100%;
     display: flex;
-    /* flex: 1 1 734px; */
     flex: 0 1 734px;
     flex-direction: column;
   }
-  .frame1_content > .frame1_content-ranked {
+
+  .frame1_content > .frame1_ranked_wrapper {
     flex: 1 1 0;
     height: 100%;
     position: relative;
@@ -156,43 +147,83 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
+  }
 
-  }
-  .frame1_content-ranked > .test {
-    display: flex;
-    justify-content: center;
-    --bs-gutter-y: -54px;
-    position: absolute;
-    top: 157px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100%;
-  }
   .ranked_item > .ranked_item-label {
     width: 261px;
     min-width: 188px;
     height: 67px;
   }
-  .test2 {
+
+  .frame_ranked_content {
     position: absolute;
     top: 157px;
     height: calc(100vh - 157px);
   }
 }
 
+@media only screen and (min-width: 390px) {
+  #section_1 .frame1_title {
+    width: 100%;
+    height: 295px;
+    background-image: url(../img/vng/frame1/desktop/desktop_title.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  #section_1 .frame1_cta {
+    width: 100%;
+    height: 80px;
+    background-image: url(../img/vng/frame1/desktop/desktop_cta.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  #section_1 .frame1_title {
+    background-image: url(../img/vng/frame1/mobile/mobile_title.png);
+    width: 100%;
+    height: 157px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  #section_1 .frame1_cta {
+    width: 100%;
+    height: 46px;
+    background-image: url(../img/vng/frame1/mobile/mobile_cta.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  #section_1 .frame1_title {
+    background-image: url(../img/vng/frame1/mobile/mobile_title.png);
+  }
+}
+
 @media (max-width: 1024px) {
+  .header > div > nav {
+    display: none;
+  }
+
   #navbar, .btn-download {
     display: none;
   }
 
-  #hero-animated.frame1 {
+  #section_1 {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-image: url(../img/vng/frame1/mobile/mobile_background.png);
   }
 
-  #hero-animated.frame1 .frame1_char {
+  #section_1 .frame1_char {
     width: 100%;
     height: 100vh;
     background-image: url(../img/vng/frame1/mobile/mobile_char_ambessa.png);
@@ -203,6 +234,7 @@
     z-index: 3;
   }
 
+  /*======== DRAWER =========*/
   .drawer__container {
     width: 100%;
     height: 100vh;
@@ -237,6 +269,7 @@
     animation: drawer-animate-fadeout 0.1s linear;
     left: -100%;
   }
+
   .drawer-title {
     font-size: 1.25rem;
     line-height: 24px;
@@ -253,7 +286,7 @@
     padding: 357px 0 0 0;
   }
 
-  .frame1_content-ranked {
+  .frame1_ranked_wrapper {
     width: 100%;
   }
 
@@ -270,6 +303,7 @@
     width: 163px;
     height: 130px;
   }
+
   .ranked_item > .ranked_item-label {
     height: 42px;
     width: 163px;

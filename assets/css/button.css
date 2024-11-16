@@ -1,12 +1,33 @@
 .btn-download, .btn-download-mobile {
-  width: 156px;
+  flex: 0 0 156px;
   font-family: 'GS3 Beatrice Medium';
   background-color: var(--color-red-base);
   font-weight: bold;
   color: #fff !important;
   padding: 4px 10px;
   height: 36px;
+  font-size: 15px;
   border-radius: 6px;
   padding: 5px;
   text-align: center;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-menu-list, .btn-close-drawer {
+	min-width: 45px;
+	width: 45px;
+	height: 45px;
+	border-radius: 12px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(255, 255, 255, 0.212);
+	cursor: pointer;
+}
+
+.btn-menu-list > i.btn-menu-list-icon {
+	font-size: 20px;
 }

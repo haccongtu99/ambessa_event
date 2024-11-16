@@ -4,26 +4,8 @@ body {
 	padding: 0;
 }
 
-.btn-menu-mobile {
-	transition: all 0.3s ease;
-	border-radius: 12px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 45px;
-	height: 45px;
-}
-
-.btn-menu-mobile > i.btn-menu-mobile-icon {
-	font-size: 20px;
-}
-
-.btn-menu-mobile:hover {
-  background-color: rgba(255, 255, 255, 0.212);
-}
-
  @media (min-width: 1024px) {
-	.btn-menu-mobile {
+	.btn-menu-list {
 		display: none;
 	}
  }
@@ -46,6 +28,16 @@ body {
 	height: 100%;
 }
 
+.sticky-social-icons .social-icon img {
+	display: block;
+	transition: transform 0.3s ease;
+}
+
+.sticky-social-icons .social-icon:hover img {
+	transform: scale(1.1);
+	filter: brightness(110%);
+}
+
 @media (max-width: 1200px) {
 	.sticky-social-icons {
 		right: 0;
@@ -58,16 +50,6 @@ body {
 }
 
 @media (max-width: 768px) {
-}
-
-.sticky-social-icons .social-icon img {
-	display: block;
-	transition: transform 0.3s ease;
-}
-
-.sticky-social-icons .social-icon:hover img {
-	transform: scale(1.1);
-	filter: brightness(110%);
 }
 
 /* FONTS: BEAUFORTFORLOL */
@@ -231,20 +213,4 @@ body {
 	font-weight: 600;
 	font-style: italic;
 	font-display: swap;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-	padding: 0;
-	margin: 0;
-}
-
-a, a:hover {
-	text-decoration: none;
-	color: inherit;
 }

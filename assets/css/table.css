@@ -60,4 +60,6 @@ table > tbody > tr:nth-child(-n+3) > td {
   font-family: 'Spiegel Bold';
 }
 
-
+#frame1_ranked_table {
+  padding: 0 60px;
+}

@@ -1,5 +1,4 @@
 .header {
-  /* padding: 0 20px; */
   padding: 0 84px;
   transition: all 0.5s;
   z-index: 997;
@@ -10,7 +9,11 @@
 
 .header-mobile {
   padding: 43px 23px 14px 23px;
-  /* padding: 43px 23px 14px 23px; */
+}
+
+.header-mobile .header-container img.img-icon {
+  width: 100%;
+  height: auto;
 }
 
 .header.sticked {

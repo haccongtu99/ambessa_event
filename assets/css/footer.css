@@ -1,6 +1,7 @@
 #footer {
   background: #000000;
   color: var(--color-white);
+  padding: 20px 0 32px 0;
 }
             
 .footer-info {
@@ -15,11 +16,4 @@
   line-height: 16px;
   color: #e6e6e6;
   font-weight: bold;
-}
-
-@media (max-width: 938px) {
-  /* .footer-info {
-    font-size: 10px;
-  } */
-   /* .footer .col-12 */
 }
