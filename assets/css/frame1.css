@@ -3,10 +3,14 @@
   0% {
     transform: translateX(-100%);
   }
+  1% {
+    transform: translateX(-50%);
+  }
   100% {
-    transform: translateX(0);
+    transform: translateX(0%);
   }
 }
+
 @keyframes drawer-animate-fadeout {
   0% {
     transform: translateX(100%);
@@ -226,12 +230,14 @@
 
   /*======== DRAWER =========*/
   .drawer__container {
+    display: none;
     width: 100%;
     height: 100vh;
     background-color: #000;
-    position: absolute;
+    position: fixed;
     top: 0;
-    left: -100%;
+    left: -100;
+    z-index: 999;
   }
 
   .drawer__container .btn-download-mobile {
